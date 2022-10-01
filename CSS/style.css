@@ -1,0 +1,244 @@
+/*******Start of Font Styles*******/
+@font-face {
+    font-family: "Main_Font";
+    src: url("../fonts/OpenSans-Bold.ttf")
+    ,url("../fonts/OpenSans-Bold.eot")
+    ,url("../fonts/OpenSans-Bold.svg")
+    ,url("../fonts/OpenSans-Bold.woff")
+    ,url("../fonts/OpenSans-Bold.woff2");
+}
+@font-face {
+    font-family: "Main_Font1";
+    src: url("../fonts/OpenSans-ExtraBold.ttf")
+    ,url("../fonts/OpenSans-ExtraBold.eot")
+    ,url("../fonts/OpenSans-ExtraBold.svg")
+    ,url("../fonts/OpenSans-ExtraBold.woff")
+    ,url("../fonts/OpenSans-ExtraBold.woff2");
+}
+@font-face {
+    font-family: "Main_Font2";
+    src: url("../fonts/OpenSans-SemiBold.ttf")
+    ,url("../fonts/OpenSans-SemiBold.eot")
+    ,url("../fonts/OpenSans-SemiBold.svg")
+    ,url("../fonts/OpenSans-SemiBold.woff")
+    ,url("../fonts/OpenSans-SemiBold.woff2");
+}
+/*@font-face {
+    font-family: "Main_Font3";
+    src: url("../fonts/OpenSans-ExtraLight.ttf")
+    ,url("../fonts/OpenSans-ExtraLight.eot")
+    ,url("../fonts/OpenSans-ExtraLight.svg")
+    ,url("../fonts/OpenSans-ExtraLight.woff")
+    ,url("../fonts/OpenSans-ExtraLight.woff2");
+}*/
+@font-face {
+    font-family: "Main_Font4";
+    src: url("../fonts/OpenSans-Light.ttf")
+    ,url("../fonts/OpenSans-Light.eot")
+    ,url("../fonts/OpenSans-Light.svg")
+    ,url("../fonts/OpenSans-Light.woff")
+    ,url("../fonts/OpenSans-Light.woff2");
+}
+@font-face {
+    font-family: "Main_Font5";
+    src: url("../fonts/OpenSans-Medium.ttf")
+    ,url("../fonts/OpenSans-Medium.eot")
+    ,url("../fonts/OpenSans-Medium.svg")
+    ,url("../fonts/OpenSans-Medium.woff")
+    ,url("../fonts/OpenSans-Medium.woff2");
+}
+@font-face {
+    font-family: "Main_Font6";
+    src: url("../fonts/OpenSans-Regular.ttf")
+    ,url("../fonts/OpenSans-Regular.eot")
+    ,url("../fonts/OpenSans-Regular.svg")
+    ,url("../fonts/OpenSans-Regular.woff")
+    ,url("../fonts/OpenSans-Regular.woff2");
+}
+/*******End of Font Styles*******/
+
+/*******Start of Variables*******/
+:root {
+    --MainColor: #19c8fa;
+    --MainFontColor: white;
+    --TextBackgroungColor: rgb(15 116 143 / 70%);
+}
+/*******End of Variables*******/
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+
+/*******Start of Framework*******/
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*******End of Framework*******/
+
+/*******Start of Header Styles*******/
+header {
+    min-height: 100vh;
+    background-image: url("../images/landing.jpg");
+    background-size: cover;
+    position: relative;
+}
+header div:empty {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+    position: absolute;
+}
+header .parent {
+    min-height: 97px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header .parent::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 30px);
+    border-bottom: 1px solid #a2a2a2;
+    bottom: 0;
+}
+header .parent .logo img {
+    height: 40px;
+}
+header .parent .Menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+header .parent .Menu ul {
+    width: 100%;
+    height: 30px;
+    font-family: Main_Font6, sans-serif;
+    font-size: 14px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border-right: 1px solid var(--MainFontColor);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+header .parent .Menu ul li {
+    padding: 40px 10px;
+    border-bottom: 1px solid transparent;
+    z-index: 1;
+}
+header .parent .Menu ul li a{
+    color: var(--MainFontColor);
+    text-decoration: none;
+}
+header .parent .Menu ul li:last-of-type {
+    margin-right: 30px;
+}
+header .parent .Menu ul li:hover {
+    border-color: var(--MainColor);
+    cursor: pointer;
+}
+header .parent .Menu ul li:hover > a {
+    color: var(--MainColor);
+}
+header .parent .Menu i {
+    font-size: 20px;
+    color: var(--MainFontColor);
+}
+header .text {
+    width: 50%;
+    background-color: var(--TextBackgroungColor);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    color: var(--MainFontColor);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .text::before{
+    content: "\f104";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 26px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+header .text::after{
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 26px;
+    position: absolute;
+    top: 50%;
+    right: calc(-100% + 30px);
+    transform: translateY(-50%);
+}
+header .text .content {
+    max-width: 500px;
+}
+header .text .content h2 {
+    font-family: Main_Font4, sans-serif;
+    font-size: 32px;
+    margin: 0 0 20px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+header .text .content p {
+    font-family: Main_Font6, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    line-height: 2;
+}
+header .circles {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+}
+header .circles span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+header .circles span:first-of-type,
+header .circles span:last-of-type {
+    background-color: transparent;
+    border: 1px solid var(--MainFontColor);
+}
+header .circles span:nth-of-type(2) {
+    background-color: var(--MainColor);
+}
+/*******End of Header Styles*******/
