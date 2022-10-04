@@ -249,11 +249,9 @@ header .circles span:nth-of-type(2) {
 
 /*******Start of Sections Styles*******/
 
-/*******Start of Services-section Style*******/
-.Services {
+/*******Start of Services Section Style*******/
+.Services-Section {
     padding: var(--Padding);
-    display: flex;
-    justify-content: center;
 }
 .Services .Header-Section {
     text-align: center;
@@ -263,6 +261,7 @@ header .circles span:nth-of-type(2) {
     margin-bottom: 70px;
     font-family: Main_Font4, sans-serif;
     font-size: 40px;
+    letter-spacing: 0.5px;
     position: relative;
 }
 .Services .Header-Section h3::after {
@@ -294,3 +293,28 @@ header .circles span:nth-of-type(2) {
     line-height: 2;
     color: var(--TextFontColor);
 }
+.Services .services-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+}
+.Services .services-items > section {
+    display: flex;
+    gap: 50px;
+}
+.Services .services-items > section i {
+    font-size: 50px;
+}
+.Services .services-items > section > section h3 {
+    margin: 0 0 30px 0;
+    font-family: Main_Font, sans-serif;
+    color: var(--MainColor);
+}
+.Services .services-items > section > section p {
+    margin: 0;
+    font-family: Main_Font6, sans-serif;
+    color: var(--TextFontColor);
+    line-height: 2;
+}
+/*******End of Services Section Style*******/
