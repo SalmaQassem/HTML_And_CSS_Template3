@@ -253,10 +253,10 @@ header .circles span:nth-of-type(2) {
 .Services-Section {
     padding: var(--Padding);
 }
-.Services .Header-Section {
+.Services-Section .Services .Header-Section {
     text-align: center;
 }
-.Services .Header-Section h3 {
+.Services-Section .Services .Header-Section h3 {
     margin-top: 0;
     margin-bottom: 70px;
     font-family: Main_Font4, sans-serif;
@@ -264,7 +264,7 @@ header .circles span:nth-of-type(2) {
     letter-spacing: 0.5px;
     position: relative;
 }
-.Services .Header-Section h3::after {
+.Services-Section .Services .Header-Section h3::after {
     content: "";
     position: absolute;
     width: 120px;
@@ -273,7 +273,7 @@ header .circles span:nth-of-type(2) {
     left: 50%;
     transform: translateX(-50%);
 }
-.Services .Header-Section h3::before {
+.Services-Section .Services .Header-Section h3::before {
     content: "";
     position: absolute;
     width: 14px;
@@ -286,32 +286,32 @@ header .circles span:nth-of-type(2) {
     left: 50%;
     transform: translate(-50%, 50%);
 }
-.Services .Header-Section p {
+.Services-Section .Services .Header-Section p {
     width: 550px;
     margin: 0 auto 100px;
     font-family: Main_Font6, sans-serif;
     line-height: 2;
     color: var(--TextFontColor);
 }
-.Services .services-items {
+.Services-Section .Services .services-items {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
     grid-column-gap: 40px;
     grid-row-gap: 60px;
 }
-.Services .services-items > section {
+.Services-Section .Services .services-items > section {
     display: flex;
     gap: 50px;
 }
-.Services .services-items > section i {
+.Services-Section .Services .services-items > section i {
     font-size: 50px;
 }
-.Services .services-items > section > section h3 {
+.Services-Section .Services .services-items > section > section h3 {
     margin: 0 0 30px 0;
     font-family: Main_Font, sans-serif;
     color: var(--MainColor);
 }
-.Services .services-items > section > section p {
+.Services-Section .Services .services-items > section > section p {
     margin: 0;
     font-family: Main_Font6, sans-serif;
     color: var(--TextFontColor);
