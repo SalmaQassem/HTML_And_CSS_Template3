@@ -409,6 +409,7 @@ header .circles span:nth-of-type(2) {
     display: flex;
     flex-wrap: wrap;
     margin-top: 60px;
+    /*width: 100vw;*/
 }
 .Portfolio-Section .Album .album-img {
     position: relative;
@@ -453,13 +454,11 @@ header .circles span:nth-of-type(2) {
     color: var(--MainColor);
 }
 .Portfolio-Section button {
+    display: block;
     margin: 30px auto;
     padding: 15px 20px;
     border: 0;
     background-color: var(--MainColor);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
 .Portfolio-Section button a {
     text-decoration: none;
@@ -467,3 +466,47 @@ header .circles span:nth-of-type(2) {
     font-family: Main_Font6, sans-serif;
 }
 /*******End of Portfolio Section Style*******/
+
+/*******Start of Video Section Style*******/
+.Video-Section {
+    position: relative;
+}
+.Video-Section::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 40%);
+    position: absolute;
+    top: 0;
+}
+.Video-Section video {
+    width: 100%;
+}
+.Video-Section article {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--TextBackgroungColor);
+    text-align: center;
+    color: var(--MainFontColor);
+    padding: 50px;
+}
+.Video-Section article h2{
+    font-family: Main_Font4, sans-serif;
+    letter-spacing: 1.2px;
+    margin: 0 0 30px 0;
+}
+.Video-Section article p{
+    font-family: Main_Font6, sans-serif;
+    margin: 0 0 30px 0;
+}
+.Video-Section article button{
+    font-family: Main_Font6, sans-serif;
+    padding: 10px 20px;
+    background-color: black;
+    border: 0;
+    color: var(--MainFontColor);
+}
+/*******End of Video Section Style*******/
