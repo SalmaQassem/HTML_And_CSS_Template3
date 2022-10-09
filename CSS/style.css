@@ -1025,6 +1025,7 @@ header .circles span:nth-of-type(2) {
     display: flex;
     position: relative;
     width: 500px;
+    max-width: 100%;
 }
 .pricing-img .subscribe .mail::before {
     content: "\f0e0";
