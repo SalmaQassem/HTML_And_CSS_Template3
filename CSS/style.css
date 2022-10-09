@@ -139,6 +139,7 @@ html, body {
 }
 .Header-Section p {
     width: 550px;
+    max-width: 100%;
     margin: 0 auto 100px;
     font-family: Main_Font6, sans-serif;
     line-height: 2;
