@@ -176,6 +176,9 @@ header .parent::after {
     border-bottom: 1px solid #a2a2a2;
     bottom: 0;
 }
+header .parent .logo a {
+    transition: 0.3s;
+}
 header .parent .logo img {
     height: 40px;
 }
@@ -219,6 +222,7 @@ header .parent .Menu nav li {
     cursor: pointer;
 }
 header .parent nav li a{
+    transition: 0.3s;
     color: var(--MainFontColor);
     text-decoration: none;
 }
