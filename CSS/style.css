@@ -69,9 +69,6 @@
     --PackageColor: #fcfcfc;
 }
 /*******End of Variables*******/
-html {
-
-}
 html, body {
     max-width: 100%;
     scroll-behavior: smooth;
@@ -1021,24 +1018,20 @@ header .circles span:nth-of-type(2) {
         gap: 30px;
     }
 }
-.pricing-img .subscribe .mail{
+.pricing-img .subscribe form{
     display: flex;
     position: relative;
     width: 500px;
     max-width: 100%;
 }
-.pricing-img .subscribe .mail::before {
-    content: "\f0e0";
-    position: absolute;
+.pricing-img .subscribe form i {
     color: var(--MainFontColor);
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 20px;
+    position: absolute;
     top: 50%;
     left: 25px;
     transform: translateY(-50%);
 }
-.pricing-img .subscribe .mail input {
+.pricing-img .subscribe form input[type="email"] {
     padding: 20px 20px 20px 60px;
     background-color: transparent;
     color: var(--MainFontColor);
@@ -1047,11 +1040,11 @@ header .circles span:nth-of-type(2) {
     border-right: none;
     width: calc(100% - 130px);
 }
-.pricing-img .subscribe .mail input::placeholder {
+.pricing-img .subscribe form input[type="email"]::placeholder {
     color: var(--MainFontColor);
     font-family: Main_Font6, sans-serif;
 }
-.pricing-img .subscribe .mail button{
+.pricing-img .subscribe form [type="submit"]{
     width: 130px;
     padding: 10px 20px;
     font-family: Main_Font6, sans-serif;
