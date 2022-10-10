@@ -376,6 +376,7 @@ header .circles span:nth-of-type(2) {
     .Services-Section .Services .services-items > section {
         flex-direction: column;
         align-items: center;
+        text-align: center;
         gap: 30px;
     }
 }
@@ -392,11 +393,6 @@ header .circles span:nth-of-type(2) {
     font-family: Main_Font6, sans-serif;
     color: var(--TextFontColor);
     line-height: 2;
-}
-@media (max-width: 767px) {
-    .Services-Section .Services .services-items > section >section {
-        text-align: center;
-    }
 }
 /*******End of Services Section Style*******/
 
