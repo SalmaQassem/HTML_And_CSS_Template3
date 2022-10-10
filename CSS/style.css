@@ -376,7 +376,6 @@ header .circles span:nth-of-type(2) {
     .Services-Section .Services .services-items > section {
         flex-direction: column;
         align-items: center;
-        text-align: center;
         gap: 30px;
     }
 }
@@ -393,6 +392,11 @@ header .circles span:nth-of-type(2) {
     font-family: Main_Font6, sans-serif;
     color: var(--TextFontColor);
     line-height: 2;
+}
+@media (max-width: 767px) {
+    .Services-Section .Services .services-items > section > section {
+        text-align: center;
+    }
 }
 /*******End of Services Section Style*******/
 
@@ -420,7 +424,7 @@ header .circles span:nth-of-type(2) {
     text-align: center;
     position: relative;
     flex: 1;
-    z-index: 1;
+    z-index: 2;
 }
 @media (max-width: 767px) {
     .Design-Features .Design-Features-image {
@@ -432,19 +436,16 @@ header .circles span:nth-of-type(2) {
     bottom: -150px;
 }
 .Design-Features .text {
-    width: 50%;
     background-color: var(--TextBackgroungColor);
     padding: 50px;
     color: var(--MainFontColor);
     position: relative;
-    right: 0;
     flex: 1;
-    z-index: 1;
+    z-index: 2;
 }
 .Design-Features .text h2 {
     margin: 0 0 40px 0;
     font-family: Main_Font4,sans-serif;
-    letter-spacing: 1.1px;
 }
 .Design-Features .text ul {
     list-style: none;
@@ -716,66 +717,58 @@ header .circles span:nth-of-type(2) {
 .testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people {
     display: flex;
     flex-direction: column;
-    gap: 30px;
 }
-.testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people section {
+.testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people > section {
     display: flex;
     margin-bottom: 30px;
     width: fit-content;
 }
 @media (max-width: 767px) {
-    .testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people section {
+    .testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people > section {
         flex-direction: column;
         align-items: center;
     }
-    .testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people section p{
-        text-align: center;
-    }
 }
-.testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people section img{
+.testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people > section img{
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     margin-right: 50px;
 }
 @media (max-width: 767px) {
-    .testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people section img{
+    .testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people > section img{
         margin: 0 auto 20px;
+        top: 0;
+        transform: translateY(0);
     }
 }
-.testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people section p{
+.testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people > section .text {
     font-family: Main_Font6, sans-serif;
+    line-height: 1.8;
+    border-bottom: 1px solid #ccc;
+}
+.testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people > section .text p:first-of-type{
     margin: 0;
     text-align: left;
-    line-height: 1.8;
-    position: relative;
 }
-@media (max-width: 767px) {
-    .testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people section p{
-        text-align: center;
-    }
-}
-.testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people section p::before{
-    content: "";
-    width: 100%;
-    position: absolute;
-    border-bottom: 1px solid #ccc;
-    bottom: -30px;
-}
-.testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people section p::after{
-    content: "John Doe, CEO";
-    position: absolute;
-    bottom: -30px;
-    right: 0;
-    margin-bottom: 10px;
-    font-family: Main_Font6, sans-serif;
+.testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people > section .text p:last-of-type{
+    margin: 0 0 10px 0;
+    text-align: right;
     color: var(--TextFontColor);
     font-size: 14px;
+}
+@media (max-width: 767px) {
+    .testimonials-skills-Section .testimonials-skills .testimonials .testimonials-people > section .text p:first-of-type{
+        text-align: center;
+    }
 }
 .testimonials-skills-Section .testimonials-skills .testimonials ul {
     display: flex;
     list-style: none;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
     padding: 0;
 }
