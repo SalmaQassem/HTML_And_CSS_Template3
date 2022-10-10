@@ -69,10 +69,8 @@
     --PackageColor: #fcfcfc;
 }
 /*******End of Variables*******/
-html, body {
-    max-width: 100%;
+html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 * {
     -webkit-box-sizing: border-box;
@@ -182,11 +180,6 @@ header .parent .logo a {
 header .parent .logo img {
     height: 40px;
 }
-/*header .parent .Menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}*/
 header .parent .Menu nav {
     display: flex;
     flex: 1;
@@ -359,44 +352,44 @@ header .circles span:nth-of-type(2) {
 }
 .Services-Section .Services .services-items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
     grid-column-gap: 40px;
     grid-row-gap: 60px;
 }
 @media (max-width: 767px) {
     .Services-Section .Services .services-items{
-        grid-row-gap: 40px;
+        display: block;
     }
 }
 .Services-Section .Services .services-items > section {
     display: flex;
-    gap: 50px;
 }
 @media (max-width: 767px) {
     .Services-Section .Services .services-items > section {
         flex-direction: column;
-        align-items: center;
-        gap: 30px;
+        text-align: center;
+        margin-bottom: 40px;
     }
 }
 .Services-Section .Services .services-items > section i {
     font-size: 50px;
+    margin-right: 50px;
 }
-.Services-Section .Services .services-items > section > section h3 {
+@media (max-width: 767px) {
+    .Services-Section .Services .services-items > section i{
+        margin: 0 0 30px 0;
+    }
+}
+.Services-Section .Services .services-items > section .text h3 {
     margin: 0 0 30px 0;
     font-family: Main_Font, sans-serif;
     color: var(--MainColor);
 }
-.Services-Section .Services .services-items > section > section p {
+.Services-Section .Services .services-items > section .text p {
     margin: 0;
     font-family: Main_Font6, sans-serif;
     color: var(--TextFontColor);
     line-height: 2;
-}
-@media (max-width: 767px) {
-    .Services-Section .Services .services-items > section > section {
-        text-align: center;
-    }
 }
 /*******End of Services Section Style*******/
 
@@ -615,7 +608,7 @@ header .circles span:nth-of-type(2) {
 }
 .AboutUs-Section .Status-img{
     background-image: url("../images/stats.png");
-    /*background-size: cover;*/
+    background-size: cover;
     margin: 0;
     padding-top: var(--Padding);
     padding-bottom: var(--Padding);
@@ -691,11 +684,7 @@ header .circles span:nth-of-type(2) {
     display: flex;
     justify-content: space-between;
     text-align: center;
-}
-@media (max-width: 767px) {
-    .testimonials-skills-Section .testimonials-skills {
-        flex-direction: column;
-    }
+    flex-wrap: wrap;
 }
 .testimonials-skills-Section .testimonials-skills .testimonials {
     display: flex;
