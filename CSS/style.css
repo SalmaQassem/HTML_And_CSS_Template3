@@ -919,34 +919,25 @@ header .circles span:nth-of-type(2) {
     letter-spacing: 1.1px;
     margin: 0 0 20px 0;
 }
-.Pricing-Section .Pricing .packages .Package section h2 {
+.Pricing-Section .Pricing .packages .Package section span {
     font-family: Main_Font, sans-serif;
     font-size: 60px;
     margin: 0;
     position: relative;
 }
-.Pricing-Section .Pricing .packages .Package section h2::before {
+.Pricing-Section .Pricing .packages .Package section span::before {
     content: "$";
     position: absolute;
-    top: -5px;
-    left: 45px;
+    top: 0;
+    left: -20px;
     font-family: Main_Font4, sans-serif;
     font-size: 25px;
 }
-.Pricing-Section .Pricing .packages .Package section h2::after {
+.Pricing-Section .Pricing .packages .Package section span::after {
     content: "/Mo";
     position: absolute;
     font-size: 20px;
-    right: 20px;
-    bottom: 5px;
-}
-@media (max-width: 767px) {
-    .Pricing-Section .Pricing .packages .Package section h2::before {
-        left: 140px;
-    }
-    .Pricing-Section .Pricing .packages .Package section h2::after {
-        right: 115px;
-    }
+    bottom: 0;
 }
 .Pricing-Section .Pricing .packages .Package p {
     font-family: Main_Font6, sans-serif;
