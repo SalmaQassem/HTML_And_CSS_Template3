@@ -98,13 +98,12 @@ aside {
 @media (max-width: 767px) {
     aside {
         width: 60px;
-        padding: 10px;
+        padding: 10px !important;
     }
 }
 @media (min-width: 767px) and (max-width: 992px) {
     aside {
         width: 195px;
-        padding: 20px;
     }
 }
 aside > h3:first-of-type {
@@ -240,7 +239,7 @@ aside > ul li a:hover, aside > ul li .active{
 }
 /*******End of Page info Body Heading Styles*******/
 /*******Start of Page info Body -Dashboard Page- Styles*******/
-.Page-info .Page-info-body .Dashboard {
+.Page-info .Page-info-body section:nth-of-type(2) {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 @media (max-width: 767px) {
@@ -485,4 +484,149 @@ aside > ul li a:hover, aside > ul li .active{
 }
 /*******End of Page info Body -Dashboard Page- Styles*******/
 
+/*******Start of Page info Body -Settings Page- Styles*******/
+.toggle-switch > .checkbox{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.toggle-switch > .checkbox:checked + .toggle {
+    background-color: var(--btncolor);
+}
+.toggle-switch > .checkbox:checked + .toggle::before {
+    content: "\f00c";
+    color: var(--btncolor);
+    transform: translate(44px, -50%);
+}
+.toggle-switch > .toggle {
+    width: 78px;
+    height: 32px;
+}
+.toggle-switch > .toggle::before {
+    content: "\f00d";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+    background-color: white;
+    color: var(--darkgrey);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(4) > div > input {
+    height: 40px;
+    width: calc(100% - 40px);
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(4) > div > i {
+    width: 40px;
+    height: 40px;
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(5) > label > input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(5) > label > input[type="checkbox"]:checked + .tick::before {
+    transform: translate(-50%, -50%) scale(1) rotate(360deg);
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(5) > label > .tick {
+    width: 18px;
+    height: 18px;
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(5) > label > .tick:hover {
+    border-color: var(--btncolor);
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(5) > label > .tick::before {
+    content: "\f00c";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: var(--btncolor);
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.3s;
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(6) > ul > li > label > input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(6) > ul > li > label > input[type="radio"]:checked + .circle {
+    border-color: var(--btncolor);
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(6) > ul > li > label > input[type="radio"]:checked + .circle::after {
+    display: initial;
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(6) > ul > li > label > .circle {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(6) > ul > li > label > .circle::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--btncolor);
+    display: none;
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(6) > section > label {
+    width: calc((100% - 40px)/3);
+    height: 85px;
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Settings  > section:nth-child(6) > section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Page-info .Page-info-body .Settings  > section:nth-child(6) > section > label {
+        width: 100%;
+    }
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(6) > section > label > input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(6) > section > label > input[type="radio"]:checked + .radiobox {
+    border-color: var(--btncolor);
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(6) > section > label > input[type="radio"]:checked + .radiobox::before,
+.Page-info .Page-info-body .Settings  > section:nth-child(6) > section > label > input[type="radio"]:checked + .radiobox::after {
+    color: var(--btncolor);
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(6) > section > label > .radiobox::before {
+    content: "\f233";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(6) > section > label > .radiobox::after{
+    content: attr(backup);
+    position: absolute;
+    font-family: Main_Font4, sans-serif;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*******End of Page info Body -Settings Page- Styles*******/
 /*******End of Page info Body Styles*******/

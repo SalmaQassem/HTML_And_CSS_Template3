@@ -1,10 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <meta name="description" content=" This Is Description For Template Three">
+    <!--Framework Css File-->
+    <link rel="stylesheet" href="CSS/framework.css"/>
+    <!--Main Css File-->
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <!--Normalize Css File-->
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <!--Icons Library-->
+    <link rel="stylesheet" href="CSS/all.min.css"/>
 </head>
-<body>
-
+<body class="flex">
+<aside class="p-20 pos-r b-white">
+    <h3 class="m-b-50 pos-r m-font">Salma</h3>
+    <ul class="m-t-b-16 m-font l-s-n">
+        <li class="font-14">
+            <a href="index.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-solid fa-chart-bar"></i>
+                <p class="m-l-10">Dashboard</p>
+            </a>
+        </li>
+        <li class="font-14">
+            <a href="settings.html" class="p-10 m-b-5 b-rad-6 flex f-align-c active t-dec-n a-i-c">
+                <i class="fa-solid fa-gear"></i>
+                <p class="m-l-10">Settings</p>
+            </a>
+        </li>
+        <li class="font-14">
+            <a href="profile.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-regular fa-user"></i>
+                <p class="m-l-10">Profile</p>
+            </a>
+        </li>
+        <li>
+            <a href="projects.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-solid fa-diagram-project"></i>
+                <p class="m-l-10">Projects</p>
+            </a>
+        </li>
+        <li>
+            <a href="courses.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <p class="m-l-10">Courses</p>
+            </a>
+        </li>
+        <li>
+            <a href="friends.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-regular fa-circle-user"></i>
+                <p class="m-l-10">Friends</p>
+            </a>
+        </li>
+        <li>
+            <a href="files" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-regular fa-file"></i>
+                <p class="m-l-10">Files</p>
+            </a>
+        </li>
+        <li>
+            <a href="plans" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-regular fa-credit-card"></i>
+                <p class="m-l-10">Plans</p>
+            </a>
+        </li>
+    </ul>
+</aside>
+<section class="Page-info">
+    <section class="Page-info-head p-15 flex f-just-c-s">
+        <section class="search pos-r">
+            <input type="search" placeholder="Type A Keyword" class="p-10 p-l-30 m-l-5  b-rad-10 font-13 r-font b-1px-grey">
+        </section>
+        <section class="profile flex f-align-c">
+            <section class="icon pos-r">
+                <i class="fa-regular fa-bell font-20"></i>
+            </section>
+            <img src="images/avatar.png" class="img-w-h m-l-15">
+        </section>
+    </section>
+    <section class="Page-info-body p-20">
+        <section class="heading pos-r">
+            <h1 class="m-b-40 m-t-0 m-font">Settings</h1>
+        </section>
+        <section class="Settings dis-g g-gap-20">
+            <section class="p-20 b-rad-10 b-white">
+                <h2 class="m-font m-b-10">Site Control</h2>
+                <p class="m-font m-t-5 m-b-20 f-grey">Control The Website If There Is Maintenance</p>
+                <section class="flex f-align-c f-just-c-s m-b-20">
+                    <section>
+                        <p class="m-font m-b-10">Website Control</p>
+                        <p class="m-font font-13 m-t-5 f-grey">Open/Close Website And Type The Reason</p>
+                    </section>
+                    <label class="toggle-switch">
+                        <input type="checkbox" class="checkbox b-rad-50per b-white cur-p" checked>
+                        <div class="toggle b-d-gray p-5 b-rad-16 cur-p pos-r"></div>
+                    </label>
+                </section>
+                <textarea placeholder="Close Message Content" class="dis-b wid-100 b-rad-6 b-1px-grey p-10 r-font font-13 txt-a-res min-h-150"></textarea>
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <h2 class="m-font m-b-10">General Info</h2>
+                <p class="m-font m-t-5 m-b-20 f-grey">General Information About Your Account</p>
+                <label for="firstname" class="m-font f-grey font-14 dis-b m-b-10">First Name</label>
+                <input type="text" id="firstname" placeholder="First Name" class="wid-100 m-b-20 p-10 r-font font-13 b-1px-grey b-rad-6">
+                <label for="lastname" class="m-font f-grey font-14 dis-b m-b-10">Last Name</label>
+                <input type="text" id="lastname" placeholder="Last Name" class="wid-100 m-b-20 p-10 r-font font-13 b-1px-grey b-rad-6">
+                <label for="mail" class="m-font f-grey font-14 dis-b m-b-10">Email</label>
+                <section class="flex f-just-c-s f-align-c">
+                    <input type="email" id="mail" value="o@nn.sa" class="wid-100 m-r-15 p-10 r-font font-13 f-lgrey b-1px-grey b-rad-6 b-lgray cur-not-a" readonly>
+                    <button class="b-white m-font cur-p">
+                        <a href="settings.html" class="t-dec-n f-blue">Change</a>
+                    </button>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <h2 class="m-font m-b-10">Security Info</h2>
+                <p class="m-font m-t-5 m-b-20 f-grey">Security Information About Your Account</p>
+                <section class="flex f-align-c f-just-c-s p-b-30 m-b-15 b-b-1px-lgrey">
+                    <section>
+                        <p class="m-font m-b-10">Password</p>
+                        <p class="m-font font-13 m-t-5 f-grey">Last Change On 25/10/2021</p>
+                    </section>
+                    <button class="btn-color m-font p-t4-b10 b-rad-6 cur-p">
+                        <a href="settings.html" class="t-dec-n f-white">Change</a>
+                    </button>
+                </section>
+                <section class="flex f-align-c f-just-c-s p-b-30 m-b-15 b-b-1px-lgrey">
+                    <section>
+                        <p class="m-font m-b-10">Two-Factor Authentication</p>
+                        <p class="m-font font-13 m-t-5 f-grey">Enable/Disable The Feature</p>
+                    </section>
+                    <label class="toggle-switch">
+                        <input type="checkbox" class="checkbox b-rad-50per b-white cur-p" checked>
+                        <div class="toggle b-d-gray p-5 b-rad-16 cur-p pos-r"></div>
+                    </label>
+                </section>
+                <section class="flex f-align-c f-just-c-s p-b-20">
+                    <section>
+                        <p class="m-font m-b-10">Devices</p>
+                        <p class="m-font font-13 m-t-5 f-grey">Check The Login Devices List</p>
+                    </section>
+                    <button class="b-grey m-font p-t4-b10 b-rad-6 cur-p">
+                        <a href="settings.html" class="t-dec-n f-black">Devices</a>
+                    </button>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <h2 class="m-font m-b-10">Social Info</h2>
+                <p class="m-font m-t-5 m-b-20 f-grey">Social Media Information</p>
+                <div class="m-b-15">
+                    <i class="fa-brands fa-twitter f-grey b-li-gr p-10 b-1px-ligrey b-l-rad-6 t-a-c"></i>
+                    <input type="text" placeholder="Twitter Username" class="p-10 m-l-n4 r-font font-13 f-grey b-li-gr b-t-r-b-1px-ligrey b-r-rad-6">
+                </div>
+                <div class="m-b-15">
+                    <i class="fa-brands fa-facebook-f f-grey b-li-gr p-10 b-1px-ligrey b-l-rad-6 t-a-c"></i>
+                    <input type="text" placeholder="Facebook Username" class="p-10 m-l-n4 r-font font-13 f-grey b-li-gr b-t-r-b-1px-ligrey b-r-rad-6">
+                </div>
+                <div class="m-b-15">
+                    <i class="fa-brands fa-linkedin f-grey b-li-gr p-10 b-1px-ligrey b-l-rad-6 t-a-c"></i>
+                    <input type="text" placeholder="Linkedin Username" class="p-10 m-l-n4 r-font font-13 f-grey b-li-gr b-t-r-b-1px-ligrey b-r-rad-6">
+                </div>
+                <div>
+                    <i class="fa-brands fa-youtube f-grey b-li-gr p-10 b-1px-ligrey b-l-rad-6 t-a-c"></i>
+                    <input type="text" placeholder="Youtube Username" class="p-10 m-l-n4 r-font font-13 f-grey b-li-gr b-t-r-b-1px-ligrey b-r-rad-6">
+                </div>
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <h2 class="m-font m-b-10">Widgets Control</h2>
+                <p class="m-font m-t-5 m-b-20 f-grey">Show/Hide Widgets</p>
+                <label for="checkbox" class="m-font flex f-align-c m-l-10 m-b-15">
+                    <input type="checkbox" class="box cur-p" id="checkbox" checked>
+                    <div class="tick b-white m-r-15 p-5 b-2px-grey b-rad-4 cur-p pos-r"></div>
+                    Quick Draft
+                </label>
+                <label for="checkbox1" class="m-font flex f-align-c m-l-10 m-b-15">
+                    <input type="checkbox" class="box cur-p" id="checkbox1" checked>
+                    <div class="tick b-white m-r-15 p-5 b-2px-grey b-rad-4 cur-p pos-r"></div>
+                    Yearly Targets
+                </label>
+                <label for="checkbox2" class="m-font flex f-align-c m-l-10 m-b-15">
+                    <input type="checkbox" class="box cur-p" id="checkbox2" checked>
+                    <div class="tick b-white m-r-15 p-5 b-2px-grey b-rad-4 cur-p pos-r"></div>
+                    Tickets Statistics
+                </label>
+                <label for="checkbox3" class="m-font flex f-align-c m-l-10 m-b-15">
+                    <input type="checkbox" class="box cur-p" id="checkbox3" checked>
+                    <div class="tick b-white m-r-15 p-5 b-2px-grey b-rad-4 cur-p pos-r"></div>
+                    Latest News
+                </label>
+                <label for="checkbox4" class="m-font flex f-align-c m-l-10 m-b-15">
+                    <input type="checkbox" class="box cur-p" id="checkbox4">
+                    <div class="tick b-white m-r-15 p-5 b-2px-grey b-rad-4 cur-p pos-r"></div>
+                    Latest Tasks
+                </label>
+                <label for="checkbox5" class="m-font flex f-align-c m-l-10">
+                    <input type="checkbox" class="box cur-p" id="checkbox5" checked>
+                    <div class="tick b-white m-r-15 p-5 b-2px-grey b-rad-4 cur-p pos-r"></div>
+                    Top Search Items
+                </label>
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <h2 class="m-font m-b-10">Backup Manager</h2>
+                <p class="m-font m-t-5 m-b-20 f-grey">Control Backup Time And Location</p>
+                <ul class="l-s-n b-b-1px-lgrey p-b-15">
+                    <li>
+                        <label for="radio" class="m-font flex f-align-c m-l-10 m-b-15 cur-p">
+                            <input type="radio" name="radio" class="radio cur-p" id="radio" checked>
+                            <div class="circle m-r-10 b-white b-rad-50per b-2px-grey cur-p pos-r"></div>
+                            Daily
+                        </label>
+                    </li>
+                    <li>
+                        <label for="radio2" class="m-font flex f-align-c m-l-10 m-b-15 cur-p">
+                            <input type="radio" name="radio" class="radio cur-p" id="radio2">
+                            <div class="circle m-r-10 b-white b-rad-50per b-2px-grey cur-p pos-r"></div>
+                            Weekly
+                        </label>
+                    </li>
+                    <li>
+                        <label for="radio3" class="m-font flex f-align-c m-l-10 cur-p">
+                            <input type="radio" name="radio" class="radio cur-p" id="radio3">
+                            <div class="circle m-r-10 b-white b-rad-50per b-2px-grey cur-p pos-r"></div>
+                            Monthly
+                        </label>
+                    </li>
+                </ul>
+                <section class="flex f-just-c-s-e wid-100 m-t-20">
+                    <label class="flex f-align-c">
+                        <input type="radio" class="cur-p" name="radiobox">
+                        <div class="radiobox p-20 b-2px-lgrey b-rad-10 pos-r wid-100 h-100 cur-p" backup="Megaman"></div>
+                    </label>
+                    <label class="flex f-align-c">
+                        <input type="radio" class="cur-p" name="radiobox" checked>
+                        <div class="radiobox p-20 b-2px-lgrey b-rad-10 pos-r wid-100 h-100 cur-p" backup="Zero"></div>
+                    </label>
+                    <label class="flex f-align-c">
+                        <input type="radio" class="cur-p" name="radiobox">
+                        <div class="radiobox p-20 b-2px-lgrey b-rad-10 pos-r wid-100 h-100 cur-p" backup="Sigma"></div>
+                    </label>
+                </section>
+            </section>
+        </section>
+    </section>
+</section>
 </body>
 </html>

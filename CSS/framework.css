@@ -222,6 +222,12 @@
 .btn1-m {
     margin: 0 0 0 auto;
 }
+.m-15 {
+    margin: 15px;
+}
+.m-20 {
+    margin: 20px;
+}
 .m-l-n20 {
     margin-left: -20px;
 }
