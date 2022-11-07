@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <meta name="description" content=" This Is Description For Template Three">
+    <!--Framework Css File-->
+    <link rel="stylesheet" href="CSS/framework.css"/>
+    <!--Main Css File-->
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <!--Normalize Css File-->
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <!--Icons Library-->
+    <link rel="stylesheet" href="CSS/all.min.css"/>
+</head>
+<body class="flex">
+<aside class="p-20 pos-r b-white">
+    <h3 class="m-b-50 pos-r m-font">Elzero</h3>
+    <ul class="m-t-b-16 m-font l-s-n">
+        <li class="font-14">
+            <a href="index.html" class="p-10 m-b-5 b-rad-6 flex f-align-c active t-dec-n a-i-c">
+                <i class="fa-solid fa-chart-bar"></i>
+                <span class="m-l-10">Dashboard</span>
+            </a>
+        </li>
+        <li class="font-14">
+            <a href="settings.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-solid fa-gear"></i>
+                <p class="m-l-10">Settings</p>
+            </a>
+        </li>
+        <li class="font-14">
+            <a href="profile.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-regular fa-user"></i>
+                <p class="m-l-10">Profile</p>
+            </a>
+        </li>
+        <li>
+            <a href="projects.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-solid fa-diagram-project"></i>
+                <p class="m-l-10">Projects</p>
+            </a>
+        </li>
+        <li>
+            <a href="courses.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <p class="m-l-10">Courses</p>
+            </a>
+        </li>
+        <li>
+            <a href="friends.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-regular fa-circle-user"></i>
+                <p class="m-l-10">Friends</p>
+            </a>
+        </li>
+        <li>
+            <a href="files" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-regular fa-file"></i>
+                <p class="m-l-10">Files</p>
+            </a>
+        </li>
+        <li>
+            <a href="plans" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-regular fa-credit-card"></i>
+                <p class="m-l-10">Plans</p>
+            </a>
+        </li>
+    </ul>
+</aside>
+<section class="Page-info">
+    <section class="Page-info-head p-15 flex f-just-c-s">
+        <section class="search pos-r">
+            <input type="search" placeholder="Type A Keyword" class="p-10 p-l-30 m-l-5  b-rad-10 font-13 r-font b-1px-grey">
+        </section>
+        <section class="profile flex f-align-c">
+            <section class="icon pos-r">
+                <i class="fa-regular fa-bell font-20"></i>
+            </section>
+            <img src="images/avatar.png" class="img-w-h m-l-15">
+        </section>
+    </section>
+    <section class="Page-info-body p-20">
+        <section class="heading pos-r">
+            <h1 class="m-b-40 m-t-0 m-font">Dashboard</h1>
+        </section>
+        <section class="Dashboard dis-g g-gap-20">
+            <section class="b-rad-10 b-white pos-r">
+                <section class="heading p-20 b-t-rad-10 flex f-just-c-s b-grey pos-r">
+                    <section>
+                        <h2 class="m-font m-b-10">Welcome</h2>
+                        <p class="m-font m-t-5 f-grey">Salma</p>
+                    </section>
+                    <img src="images/welcome.png" class="m-b-n10">
+                </section>
+                <img src="images/avatar.png" class="pos-a b-2px-white b-rad-50per p-2">
+                <section class="body flex m-t-50 m-b-20 p-20 m-font t-a-c b-t-1px-lgrey b-b-1px-lgrey">
+                    <section>
+                        <p>Salma Qassem</p>
+                        <p class="font-14 f-grey m-t-15">Developer</p>
+                    </section>
+                    <section >
+                        <p>80</p>
+                        <p class="font-14 f-grey m-t-15">Projects</p>
+                    </section>
+                    <section >
+                        <p>$8500</p>
+                        <p class="font-14 f-grey m-t-15">Earned</p>
+                    </section>
+                </section>
+                <a href="profile.html" class="b-rad-6 btn-m r-font font-14 btn-style btn-color t-dec-n dis-b">Profile</a>
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <section class="heading">
+                    <h2 class="m-font m-b-10">Quick Draft</h2>
+                    <p class="m-font m-t-5 m-b-20 f-grey">Write A Draft For Your Ideas</p>
+                </section>
+                <form action=" ">
+                    <input type="text" placeholder="Title" class="b-grey dis-b wid-100 b-rad-6 p-10 m-b-20 r-font font-13">
+                    <textarea placeholder="Your Thought" class="b-grey dis-b wid-100 b-rad-6 p-10 m-b-20 r-font font-13 txt-a-res min-h-180"></textarea>
+                    <input type="submit" value="Save" class="b-rad-6 btn1-m r-font font-14 btn-style btn-color dis-b">
+                </form>
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <section class="heading">
+                    <h2 class="m-font m-b-10">Yearly Targets</h2>
+                    <p class="m-font m-t-5 m-b-20 f-grey">Targets Of The Year</p>
+                </section>
+                <section class="body flex flex-c f-gap-20 m-b-20">
+                    <section class="item flex f-align-c">
+                        <span class="icon m-r-15 flex f-align-c f-just-c-c blu-color">
+                            <i class="fa-solid fa-dollar-sign font-20 f-blue"></i>
+                        </span>
+                        <section>
+                            <p class="m-font f-grey font-14 m-t-10 m-b-10">Money</p>
+                            <p class="b-font font-18 m-t-10 m-b-10">$20.000</p>
+                            <span class="wid-100 dis-b m-t-10 m-b-10 s-b-color pos-r" per="80%"></span>
+                        </section>
+                    </section>
+                    <section class="item flex f-align-c">
+                        <span class="icon m-r-15 flex f-align-c f-just-c-c or-color">
+                            <i class="fa-solid fa-code font-20 f-orange"></i>
+                        </span>
+                        <section>
+                            <p class="m-font f-grey font-14 m-t-10 m-b-10">Projects</p>
+                            <p class="b-font font-18 m-t-10 m-b-10">24</p>
+                            <span class="wid-100 dis-b m-t-10 m-b-10 s-o-color pos-r" per="55%"></span>
+                        </section>
+                    </section>
+                    <section class="item flex f-align-c">
+                        <span class="icon m-r-15 flex f-align-c f-just-c-c gr-color">
+                            <i class="fa-solid fa-user font-20 f-green"></i>
+                        </span>
+                        <section>
+                            <p class="m-font f-grey font-14 m-t-10 m-b-10">Team</p>
+                            <p class="b-font font-18 m-t-10 m-b-10">12</p>
+                            <span class="wid-100 dis-b m-t-10 m-b-10 s-g-color pos-r" per="75%"></span>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <section class="heading">
+                    <h2 class="m-font m-b-10">Tickets Statistics</h2>
+                    <p class="m-font m-t-5 m-b-20 f-grey">Everything About Support Tickets</p>
+                </section>
+                <section class="body flex f-gap-20 t-a-c f-wrap-w">
+                    <section class="p-20 b-rad-10 b-1px-grey">
+                        <i class="fa-regular fa-rectangle-list f-orange font-26 m-b-10"></i>
+                        <p class="b-font font-25 m-b-10">2500</p>
+                        <p class="m-font f-grey font-13">Total</p>
+                    </section>
+                    <section class="p-20 b-rad-10 b-1px-grey">
+                        <i class="fa-solid fa-spinner f-blue font-26 m-b-10"></i>
+                        <p class="b-font font-25 m-b-10">500</p>
+                        <p class="m-font f-grey font-13">Pending</p>
+                    </section>
+                    <section class="p-20 b-rad-10 b-1px-grey">
+                        <i class="fa-regular fa-circle-check f-green font-26 m-b-10"></i>
+                        <p class="b-font font-25 m-b-10">1900</p>
+                        <p class="m-font f-grey font-13">Closed</p>
+                    </section>
+                    <section class="p-20 b-rad-10 b-1px-grey">
+                        <i class="fa-regular fa-rectangle-xmark f-red font-26 m-b-10"></i>
+                        <p class="b-font font-25 m-b-10">100</p>
+                        <p class="m-font f-grey font-13">Deleted</p>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <section class="heading">
+                    <h2 class="m-font m-b-20">Latest News</h2>
+                </section>
+                <section class="body flex flex-c f-gap-20">
+                    <section class="item flex f-gap-15 f-align-c p-b-20 b-b-1px-lgrey">
+                        <img src="images/news-01.png" class="b-rad-6">
+                        <section class="wid-100 flex f-just-c-s f-align-c">
+                            <section>
+                                <p class="b-font font-18 m-b-10">Created SASS Section</p>
+                                <p class="m-font f-grey font-14">New SASS Examples & Tutorials</p>
+                            </section>
+                            <span class="m-font font-13 p-t4-b10 b-grey b-rad-6">3 Days Ago</span>
+                        </section>
+                    </section>
+                    <section class="item flex f-gap-15 f-align-c p-b-20 b-b-1px-lgrey">
+                        <img src="images/news-02.png" class="b-rad-6">
+                        <section class="wid-100 flex f-just-c-s f-align-c">
+                            <section>
+                                <p class="b-font font-18 m-b-10">Changed The Design</p>
+                                <p class="m-font f-grey font-14">A Brand New Website Design</p>
+                            </section>
+                            <span class="m-font font-13 p-t4-b10 b-grey b-rad-6">5 Days Ago</span>
+                        </section>
+                    </section>
+                    <section class="item flex f-gap-15 f-align-c p-b-20 b-b-1px-lgrey">
+                        <img src="images/news-03.png" class="b-rad-6">
+                        <section class="wid-100 flex f-just-c-s f-align-c">
+                            <section>
+                                <p class="b-font font-18 m-b-10">Team Increased</p>
+                                <p class="m-font f-grey font-14">3 Developers Joined The Team</p>
+                            </section>
+                            <span class="m-font font-13 p-t4-b10 b-grey b-rad-6">7 Days Ago</span>
+                        </section>
+                    </section>
+                    <section class="item flex f-gap-15 f-align-c">
+                        <img src="images/news-04.png" class="b-rad-6">
+                        <section class="wid-100 flex f-just-c-s f-align-c">
+                            <section>
+                                <p class="b-font font-18 m-b-10">Added Payment Gateway</p>
+                                <p class="m-font f-grey font-14">Many New Payment Gateways Added</p>
+                            </section>
+                            <span class="m-font font-13 p-t4-b10 b-grey b-rad-6">9 Days Ago</span>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <section class="heading">
+                    <h2 class="m-font m-b-20">Latest Tasks</h2>
+                </section>
+                <section class="body flex flex-c f-gap-15">
+                    <section class="flex f-just-c-s f-align-c p-b-15 b-b-1px-lgrey">
+                        <section>
+                            <p class="b-font m-b-5">Record One New Video</p>
+                            <p class="m-font f-grey">Record Python Create Exe Project</p>
+                        </section>
+                        <i class="fa-regular fa-trash-can cur-p"></i>
+                    </section>
+                    <section class="flex f-just-c-s f-align-c p-b-15 b-b-1px-lgrey">
+                        <section>
+                            <p class="b-font m-b-5">Write Article</p>
+                            <p class="m-font f-grey">Write Low Level vs High Level Languages</p>
+                        </section>
+                        <i class="fa-regular fa-trash-can cur-p"></i>
+                    </section>
+                    <section class="flex f-just-c-s f-align-c p-b-15 b-b-1px-lgrey">
+                        <section>
+                            <p class="b-font m-b-5">Finish Project</p>
+                            <p class="m-font f-grey">Publish Academy Programming Project</p>
+                        </section>
+                        <i class="fa-regular fa-trash-can cur-p"></i>
+                    </section>
+                    <section class="flex f-just-c-s f-align-c p-b-15 del b-b-1px-lgrey opa-30">
+                        <section>
+                            <p class="b-font m-b-5 t-dec-l">Attend The Meeting</p>
+                            <p class="m-font f-grey t-dec-l">Attend The Project Business Analysis Meeting</p>
+                        </section>
+                        <i class="fa-regular fa-trash-can cur-p"></i>
+                    </section>
+                    <section class="flex f-just-c-s f-align-c">
+                        <section>
+                            <p class="b-font m-b-10">Finish Lesson</p>
+                            <p class="m-font f-grey">Finish Teaching Flex Box</p>
+                        </section>
+                        <i class="fa-regular fa-trash-can cur-p"></i>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <section class="heading">
+                    <h2 class="m-font m-b-20">Top Search Items</h2>
+                </section>
+                <table class="wid-100">
+                    <thead class="f-grey l-font">
+                        <tr class="flex f-just-c-s m-b-30">
+                            <th>Keyword</th>
+                            <th>Search Count</th>
+                        </tr>
+                    </thead>
+                    <tbody class="m-font flex flex-c f-gap-30">
+                        <tr class="flex f-just-c-s">
+                            <td class="t-a-l">Programming</td>
+                            <td class="font-13 b-grey p-t4-b10 b-rad-6">220</td>
+                        </tr>
+                        <tr class="flex f-just-c-s">
+                            <td class="t-a-l">JavaScript</td>
+                            <td class="font-13 b-grey p-t4-b10 b-rad-6">180</td>
+                        </tr>
+                        <tr class="flex f-just-c-s">
+                            <td class="t-a-l">PHP</td>
+                            <td class="font-13 b-grey p-t4-b10 b-rad-6">160</td>
+                        </tr>
+                        <tr class="flex f-just-c-s">
+                            <td class="t-a-l">Code</td>
+                            <td class="font-13 b-grey p-t4-b10 b-rad-6">145</td>
+                        </tr>
+                        <tr class="flex f-just-c-s">
+                            <td class="t-a-l">Design</td>
+                            <td class="font-13 b-grey p-t4-b10 b-rad-6">110</td>
+                        </tr>
+                        <tr class="flex f-just-c-s">
+                            <td class="t-a-l">Logic</td>
+                            <td class="font-13 b-grey p-t4-b10 b-rad-6">95</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <section class="heading">
+                    <h2 class="m-font m-b-20">Latest Uploads</h2>
+                </section>
+                <section class="body flex flex-c f-gap-10">
+                    <section class="item flex f-gap-15 f-align-c p-b-10 b-b-1px-lgrey">
+                        <img src="images/pdf.svg" class="b-rad-6">
+                        <section class="wid-100 flex f-just-c-s f-align-c">
+                            <section>
+                                <p class="m-font m-b-5">my-file.pdf</p>
+                                <p class="m-font f-grey font-15">Elzero</p>
+                            </section>
+                            <span class="m-font font-13 p-t4-b10 b-grey b-rad-6">2.9mb</span>
+                        </section>
+                    </section>
+                    <section class="item flex f-gap-15 p-b-10 b-b-1px-lgrey">
+                        <img src="images/avi.svg" class="b-rad-6">
+                        <section class="wid-100 flex f-just-c-s f-align-c">
+                            <section>
+                                <p class="m-font m-b-5">My-Video-File.avi</p>
+                                <p class="m-font f-grey font-15">Admin</p>
+                            </section>
+                            <span class="m-font font-13 p-t4-b10 b-grey b-rad-6">4.9mb</span>
+                        </section>
+                    </section>
+                    <section class="item flex f-gap-15 p-b-10 b-b-1px-lgrey">
+                        <img src="images/psd.svg" class="b-rad-6">
+                        <section class="wid-100 flex f-just-c-s f-align-c">
+                            <section>
+                                <p class="m-font m-b-5">My-Psd-File.pdf</p>
+                                <p class="m-font f-grey font-15">Osama</p>
+                            </section>
+                            <span class="m-font font-13 p-t4-b10 b-grey b-rad-6">4.5mb</span>
+                        </section>
+                    </section>
+                    <section class="item flex f-gap-15 p-b-10 b-b-1px-lgrey">
+                        <img src="images/zip.svg" class="b-rad-6">
+                        <section class="wid-100 flex f-just-c-s f-align-c">
+                            <section>
+                                <p class="m-font m-b-5">My-Zip-File.pdf</p>
+                                <p class="m-font f-grey font-15">User</p>
+                            </section>
+                            <span class="m-font font-13 p-t4-b10 b-grey b-rad-6">8.9mb</span>
+                        </section>
+                    </section>
+                    <section class="item flex f-gap-15 p-b-10 b-b-1px-lgrey">
+                        <img src="images/dll.svg" class="b-rad-6">
+                        <section class="wid-100 flex f-just-c-s f-align-c">
+                            <section>
+                                <p class="m-font m-b-5">My-DLL-File.pdf</p>
+                                <p class="m-font f-grey font-15">Admin</p>
+                            </section>
+                            <span class="m-font font-13 p-t4-b10 b-grey b-rad-6">4.9mb</span>
+                        </section>
+                    </section>
+                    <section class="item flex f-gap-15">
+                        <img src="images/eps.svg" class="b-rad-6">
+                        <section class="wid-100 flex f-just-c-s f-align-c">
+                            <section>
+                                <p class="m-font m-b-5">My-Eps-File.pdf</p>
+                                <p class="m-font f-grey font-15">Designer</p>
+                            </section>
+                            <span class="m-font font-13 p-t4-b10 b-grey b-rad-6">8.9mb</span>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white pos-r">
+                <section class="heading">
+                    <h2 class="m-font m-b-20">Last Project Progress</h2>
+                </section>
+                <section class="body flex flex-c f-gap-25">
+                    <section class="flex f-gap-15 f-align-c">
+                        <span class="btn-color pos-r b-rad-50per out-2px-bl b-2px-white"></span>
+                        <p class="m-font">Got The Project</p>
+                    </section>
+                    <section class="flex f-gap-15 f-align-c">
+                        <span class="btn-color pos-r b-rad-50per out-2px-bl b-2px-white"></span>
+                        <p class="m-font">Started The Project</p>
+                    </section>
+                    <section class="flex f-gap-15 f-align-c">
+                        <span class="btn-color pos-r b-rad-50per out-2px-bl b-2px-white"></span>
+                        <p class="m-font">The Project About To Finish</p>
+                    </section>
+                    <section class="flex f-gap-15 f-align-c">
+                        <span class="btn-color pos-r b-rad-50per out-2px-bl b-2px-white"></span>
+                        <p class="m-font">Test The Project</p>
+                    </section>
+                    <section class="flex f-gap-15 f-align-c">
+                        <span class="b-white b-rad-50per out-2px-bl"></span>
+                        <p class="m-font">Finish The Project & Get Money</p>
+                    </section>
+                </section>
+                <img src="images/project.png" class="pos-a opa-10">
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <section class="heading">
+                    <h2 class="m-font m-b-20">Reminders</h2>
+                </section>
+                <section class="body flex flex-c f-gap-20">
+                    <section class="flex f-align-c">
+                        <span class="btn-color m-r-15 b-rad-50per"></span>
+                        <section class="bord-b p-l-15">
+                            <p class="b-font font-14 p-b-10">Check My Tasks List</p>
+                            <p class="m-font font-13 f-grey">28/09/2022 - 12:00am</p>
+                        </section>
+                    </section>
+                    <section class="flex f-align-c">
+                        <span class="b-green m-r-15 b-rad-50per"></span>
+                        <section class="bord-g p-l-15">
+                            <p class="b-font font-14 p-b-10">Check My Projects</p>
+                            <p class="m-font font-13 f-grey">26/10/2022 - 12:00am</p>
+                        </section>
+                    </section>
+                    <section class="flex f-align-c">
+                        <span class="b-orange m-r-15 b-rad-50per"></span>
+                        <section class="bord-or p-l-15">
+                            <p class="b-font font-14 p-b-10">Call All My Clients</p>
+                            <p class="m-font font-13 f-grey">05/11/2022 - 12:00am</p>
+                        </section>
+                    </section>
+                    <section class="flex f-align-c">
+                        <span class="b-red m-r-15 b-rad-50per"></span>
+                        <section class="bord-r p-l-15">
+                            <p class="b-font font-14 p-b-10">Finish The Development Workshop</p>
+                            <p class="m-font font-13 f-grey">20/12/2022 - 12:00am</p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <section class="heading">
+                    <h2 class="m-font m-b-20">Latest Post</h2>
+                </section>
+                <section class="body">
+                    <section class="flex f-gap-15 f-align-c m-b-20">
+                        <img src="images/avatar.png">
+                        <section>
+                            <p class="b-font m-b-10">Osama Elzero</p>
+                            <p class="m-font f-grey">About 3 Hours Ago</p>
+                        </section>
+                    </section>
+                    <p class="m-font p-t-b-20 m-b-20 b-t-1px-lgrey b-b-1px-lgrey t-trans-c">You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.</p>
+                    <section class="flex f-just-c-s">
+                        <section class="flex f-align-c f-gap-5 f-grey">
+                            <i class="fa-regular fa-heart"></i>
+                            <p class="m-font">1.8K</p>
+                        </section>
+                        <section class="flex f-align-c f-gap-5 f-grey">
+                            <i class="fa-regular fa-comments"></i>
+                            <p class="m-font">500</p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white">
+                <section class="heading">
+                    <h2 class="m-font m-b-20">Social Media Stats</h2>
+                </section>
+                <section class="body flex flex-c f-gap-10">
+                    <section class="flex b-li-b wid-100">
+                        <section class="b-d-b flex f-just-c-c f-align-c font-32 f-white">
+                            <i class="fa-brands fa-twitter"></i>
+                        </section>
+                        <section class="flex f-just-c-s p-15">
+                            <p class="m-font f-d-b">90K Followers</p>
+                            <a href="index.html" class="m-font font-13 b-d-b btn-style b-rad-6 t-dec-n">Follow</a>
+                        </section>
+                    </section>
+                    <section class="flex b-li-bl">
+                        <section class="b-da-b flex f-just-c-c f-align-c font-32 f-white">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </section>
+                        <section class="flex f-just-c-s p-15">
+                            <p class="m-font f-da-b">2M Like</p>
+                            <a href="index.html" class="m-font font-13 b-da-b btn-style b-rad-6 t-dec-n">Like</a>
+                        </section>
+                    </section>
+                    <section class="flex b-l-r">
+                        <section class="b-dark-r flex f-just-c-c f-align-c font-32 f-white">
+                            <i class="fa-brands fa-youtube"></i>
+                        </section>
+                        <section class="flex f-just-c-s p-15">
+                            <p class="m-font f-dark-r">1M Subs</p>
+                            <a href="index.html" class="m-font font-13 b-dark-r btn-style b-rad-6 t-dec-n">Subscribe</a>
+                        </section>
+                    </section>
+                    <section class="flex b-li-blu">
+                        <section class="b-dark-b flex f-just-c-c f-align-c font-32 f-white">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </section>
+                        <section class="flex f-just-c-s p-15">
+                            <p class="m-font f-dark-b">70K Followers</p>
+                            <a href="index.html" class="m-font font-13 b-dark-b btn-style b-rad-6 t-dec-n">Follow</a>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="p-20 b-rad-10 b-white m-t-20">
+            <section class="heading">
+                <h2 class="m-font m-b-20">Projects</h2>
+            </section>
+            <div class="responsive-table">
+                <table class="wid-100 b-r-1px-lgrey">
+                    <thead class="t-a-l">
+                    <tr class="b-grey">
+                        <th class="p-15 b-font font-15">Name</th>
+                        <th class="p-15 b-font font-15">Finish Date</th>
+                        <th class="p-15 b-font font-15">Client</th>
+                        <th class="p-15 b-font font-15">Price</th>
+                        <th class="p-15 b-font font-15">Team</th>
+                        <th class="p-15 b-font font-15">Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">Ministry Wikipedia</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">10 May 2022</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">Ministry</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">$5300</td>
+                        <td class="p-15 b-b-1px-lgrey b-l-1px-lgrey">
+                                <span>
+                                    <img src="images/team-01.png" class="p-2 b-white b-rad-50per">
+                                    <img src="images/team-02.png" class="p-2 b-white m-l-n20 b-rad-50per">
+                                    <img src="images/team-03.png" class="p-2 b-white m-l-n20 b-rad-50per">
+                                    <img src="images/team-05.png" class="p-2 b-white m-l-n20 b-rad-50per">
+                                </span>
+                        </td>
+                        <td class="p-15 m-font font-13 f-white b-b-1px-lgrey b-l-1px-lgrey">
+                            <span class="p-t4-b10 b-orange b-rad-6">Pending</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">Elzero Shop</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">12 Oct 2021</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">Elzero Company</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">$1500</td>
+                        <td class="p-15 b-b-1px-lgrey b-l-1px-lgrey">
+                                <span>
+                                    <img src="images/team-01.png" class="p-2 b-white b-rad-50per">
+                                    <img src="images/team-02.png" class="p-2 b-white m-l-n20 b-rad-50per">
+                                    <img src="images/team-05.png" class="p-2 b-white m-l-n20 b-rad-50per">
+                                </span>
+                        </td>
+                        <td class="p-15 m-font font-13 f-white b-b-1px-lgrey b-l-1px-lgrey">
+                            <span class="p-t4-b10 btn-color b-rad-6">In Progress</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">Bouba App</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">05 Sep 2021</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">Bouba</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">$800</td>
+                        <td class="p-15 b-b-1px-lgrey b-l-1px-lgrey">
+                                <span>
+                                    <img src="images/team-02.png" class="p-2 b-white b-rad-50per">
+                                    <img src="images/team-03.png" class="p-2 b-white m-l-n20 b-rad-50per">
+                                </span>
+                        </td>
+                        <td class="p-15 m-font font-13 f-white b-b-1px-lgrey b-l-1px-lgrey">
+                            <span class="p-t4-b10 b-green b-rad-6">Completed</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">Mahmoud Website</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">22 May 2021</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">Mahmoud</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">$600</td>
+                        <td class="p-15 b-b-1px-lgrey b-l-1px-lgrey">
+                                <span>
+                                    <img src="images/team-01.png" class="p-2 b-white b-rad-50per">
+                                    <img src="images/team-02.png" class="p-2 b-white m-l-n20 b-rad-50per">
+                                </span>
+                        </td>
+                        <td class="p-15 m-font font-13 f-white b-b-1px-lgrey b-l-1px-lgrey">
+                            <span class="p-t4-b10 b-green b-rad-6">Completed</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">Sayed Website</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">24 May 2021</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">Sayed</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">$300</td>
+                        <td class="p-15 b-b-1px-lgrey b-l-1px-lgrey">
+                                <span>
+                                    <img src="images/team-01.png" class="p-2 b-white b-rad-50per">
+                                    <img src="images/team-03.png" class="p-2 b-white m-l-n20 b-rad-50per">
+                                </span>
+                        </td>
+                        <td class="p-15 m-font font-13 f-white b-b-1px-lgrey b-l-1px-lgrey">
+                            <span class="p-t4-b10 b-red b-rad-6">Rejected</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">Arena Application</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">01 Mar 2021</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">Arena Company</td>
+                        <td class="p-15 m-font font-15 b-b-1px-lgrey b-l-1px-lgrey">$2600</td>
+                        <td class="p-15 b-b-1px-lgrey b-l-1px-lgrey">
+                                <span>
+                                    <img src="images/team-01.png" class="p-2 b-white b-rad-50per">
+                                    <img src="images/team-02.png" class="p-2 b-white m-l-n20 b-rad-50per">
+                                    <img src="images/team-03.png" class="p-2 b-white m-l-n20 b-rad-50per">
+                                    <img src="images/team-04.png" class="p-2 b-white m-l-n20 b-rad-50per">
+                                </span>
+                        </td>
+                        <td class="p-15 m-font font-13 f-white b-b-1px-lgrey b-l-1px-lgrey">
+                            <span class="p-t4-b10 b-green b-rad-6">Completed</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+</section>
+</body>
+</html>

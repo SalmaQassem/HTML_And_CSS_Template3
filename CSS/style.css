@@ -1,0 +1,488 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100vh;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--btncolor);
+}
+::-webkit-scrollbar-track {
+    background: white;
+}
+/*******Start of Font Styles*******/
+@font-face {
+    font-family: "Main_Font";
+    src: url("../fonts/OpenSans-Bold.ttf")
+    ,url("../fonts/OpenSans-Bold.eot")
+    ,url("../fonts/OpenSans-Bold.svg")
+    ,url("../fonts/OpenSans-Bold.woff")
+    ,url("../fonts/OpenSans-Bold.woff2");
+}
+@font-face {
+    font-family: "Main_Font1";
+    src: url("../fonts/OpenSans-ExtraBold.ttf")
+    ,url("../fonts/OpenSans-ExtraBold.eot")
+    ,url("../fonts/OpenSans-ExtraBold.svg")
+    ,url("../fonts/OpenSans-ExtraBold.woff")
+    ,url("../fonts/OpenSans-ExtraBold.woff2");
+}
+@font-face {
+    font-family: "Main_Font2";
+    src: url("../fonts/OpenSans-SemiBold.ttf")
+    ,url("../fonts/OpenSans-SemiBold.eot")
+    ,url("../fonts/OpenSans-SemiBold.svg")
+    ,url("../fonts/OpenSans-SemiBold.woff")
+    ,url("../fonts/OpenSans-SemiBold.woff2");
+}
+@font-face {
+    font-family: "Main_Font3";
+    src: url("../fonts/OpenSans-Light.ttf")
+    ,url("../fonts/OpenSans-Light.eot")
+    ,url("../fonts/OpenSans-Light.svg")
+    ,url("../fonts/OpenSans-Light.woff")
+    ,url("../fonts/OpenSans-Light.woff2");
+}
+@font-face {
+    font-family: "Main_Font4";
+    src: url("../fonts/OpenSans-Medium.ttf")
+    ,url("../fonts/OpenSans-Medium.eot")
+    ,url("../fonts/OpenSans-Medium.svg")
+    ,url("../fonts/OpenSans-Medium.woff")
+    ,url("../fonts/OpenSans-Medium.woff2");
+}
+@font-face {
+    font-family: "Main_Font5";
+    src: url("../fonts/OpenSans-Regular.ttf")
+    ,url("../fonts/OpenSans-Regular.eot")
+    ,url("../fonts/OpenSans-Regular.svg")
+    ,url("../fonts/OpenSans-Regular.woff")
+    ,url("../fonts/OpenSans-Regular.woff2");
+}
+/*******End of Font Styles*******/
+
+/*******Start of Variables*******/
+:root {
+    --blurcolor: #dddddd;
+    --mainfontcolor: black;
+    --lgreycolor: #eeeeee;
+    --lgrey: #bababa;
+    --greycolor: #888888;
+    --dgraycolor: #c9c9c9;
+    --darkgrey: #aaaaaa;
+    --greyborder: #cccccc;
+    --redcolor: #f44336;
+    --btncolor: #0075fe;
+    --btnhcolor: #0d69d5;
+    --bluebox: #cce3ff;
+    --orangecol: #f59e0b;
+    --lightOrange: #fdecce;
+    --lightgreen: #d3f3df;
+    --greencolor: #22c55e;
+}
+/*******End of Variables*******/
+
+/*******Start of Sidebar Styles*******/
+aside {
+    width: 220px;
+    min-height: 100%;
+    box-shadow: 0 0 10px 0 var(--blurcolor);
+}
+@media (max-width: 767px) {
+    aside {
+        width: 60px;
+        padding: 10px;
+    }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+    aside {
+        width: 195px;
+        padding: 20px;
+    }
+}
+aside > h3:first-of-type {
+    text-align: center;
+}
+@media (max-width: 767px) {
+    aside > h3:first-of-type {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+}
+aside > h3:first-of-type::before {
+    content: "";
+    position: absolute;
+    background-color: var(--mainfontcolor);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 4px solid white;
+    bottom: -29px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+aside > h3:first-of-type::after {
+    content: "";
+    position: absolute;
+    background-color: var(--mainfontcolor);
+    height: 2px;
+    width: 80px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+@media (max-width: 767px) {
+    aside > h3:first-of-type::before,
+    aside > h3:first-of-type::after {
+        display: none;
+    }
+}
+aside > ul li a{
+    color: var(--mainfontcolor);
+}
+@media (max-width: 767px) {
+    aside > ul li a {
+        justify-content: center;
+    }
+}
+aside > ul li a:hover, aside > ul li .active{
+    background-color: #f6f6f6;
+}
+@media (max-width: 767px) {
+    aside > ul li p {
+        display: none;
+    }
+}
+/*******End of Sidebar Styles*******/
+
+/*******Start of Page info Styles*******/
+.Page-info {
+    width: calc(100% - 220px);
+}
+@media (max-width: 767px) {
+    .Page-info {
+        width: calc(100% - 60px);
+    }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+    .Page-info {
+        width: calc(100% - 195px);
+    }
+}
+/*******Start of Page info Head Styles*******/
+.Page-info .Page-info-head > .search::before{
+    content: "\f002";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+    color: var(--greycolor);
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.Page-info .Page-info-head > .search input:first-of-type{
+    width: 160px;
+    transition: width 0.3s;
+}
+.Page-info .Page-info-head > .search input:first-of-type:focus {
+    outline: 0;
+    width: 200px;
+}
+.Page-info .Page-info-head > .profile > .icon::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    right: -5px;
+    top: -5px;
+    background-color: var(--redcolor);
+}
+/*******End of Page info Head Styles*******/
+
+/*******Start of Page info Body Styles*******/
+/*******Start of Page info Body Heading Styles*******/
+.Page-info .Page-info-body {
+    background-color: #f1f5f9;
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body {
+        padding: 10px;
+    }
+}
+.Page-info .Page-info-body > .heading::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 120px;
+    height: 3px;
+    background-image: linear-gradient(to right, black 35%, white 35%);
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body > .heading > h1 {
+        padding: 0 10px;
+        margin: 10px 0 40px;
+    }
+    .Page-info .Page-info-body > .heading::after {
+        left: 10px;
+    }
+}
+/*******End of Page info Body Heading Styles*******/
+/*******Start of Page info Body -Dashboard Page- Styles*******/
+.Page-info .Page-info-body .Dashboard {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Dashboard {
+        display: flex !important;
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+}
+.Page-info .Page-info-body .Dashboard  > section:first-child .heading img{
+    width: 200px;
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Dashboard  > section:first-child .heading {
+        padding: 20px 20px 30px;
+    }
+    .Page-info .Page-info-body .Dashboard  > section:first-child .heading > section {
+        text-align: center;
+        margin: 5px 0 16px;
+    }
+    .Page-info .Page-info-body .Dashboard  > section:first-child .heading img {
+        display: none;
+    }
+}
+.Page-info .Page-info-body .Dashboard  > section:first-child > img {
+    width: 64px;
+    height: 64px;
+    left: 20px;
+    margin-top: -32px;
+    box-shadow: 0 0 5px var(--blurcolor);
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Dashboard  > section:first-child > img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.Page-info .Page-info-body .Dashboard  > section:first-child > .body > section {
+    flex: 1;
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Dashboard  > section:first-child > .body {
+        flex-direction: column;
+    }
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Dashboard  > section:first-child > .body > section:first-of-type,
+    .Page-info .Page-info-body .Dashboard  > section:first-child > .body > section:nth-child(2){
+        margin-bottom: 20px;
+    }
+}
+.Page-info .Page-info-body .Dashboard  > section:first-child > a:hover {
+    background-color: var(--btnhcolor);
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(2) > form > input[type="submit"]:hover{
+    background-color: var(--btnhcolor);
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(3) > .body > .item > .icon {
+    width: 80px;
+    height: 80px;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(3) > .body > .item > section {
+    width: calc(100% - 95px);
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(3) > .body > .item > section > span {
+    height: 4px;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(3) > .body > .item > section > span::before{
+    content: attr(per);
+    position: absolute;
+    width: 26px;
+    height: 18px;
+    padding: 2px 5px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Main_Font4, sans-serif;
+    font-size: 13px;
+    top: -35px;
+    transform: translateX(-50%);
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(3) > .body > .item:first-of-type > section > span::before {
+    background-color: var(--btncolor);
+    left: 80%;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(3) > .body > .item:nth-of-type(2) > section > span::before {
+    background-color: var(--orangecol);
+    left: 55%;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(3) > .body > .item:nth-of-type(3) > section > span::before {
+    background-color: var(--greencolor);
+    left: 75%;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(3) > .body > .item > section > span::after{
+    content: " ";
+    position: absolute;
+    border: 5px solid transparent;
+    top: -13px;
+    transform: translateX(-50%);
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(3) > .body > .item:first-of-type > section > span::after {
+    border-top-color: var(--btncolor);
+    left: 80%;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(3) > .body > .item:nth-of-type(2) > section > span::after {
+    border-top-color: var(--orangecol);
+    left: 55%;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(3) > .body > .item:nth-of-type(3) > section > span::after {
+    border-top-color: var(--greencolor);
+    left: 75%;
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Dashboard  > section:nth-child(4) > .body {
+        flex-direction: column;
+    }
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(4) > .body > section {
+    width: calc(50% - 10px);
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Dashboard  > section:nth-child(4) > .body > section {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Dashboard  > section:nth-child(5){
+        text-align: center;
+    }
+    .Page-info .Page-info-body .Dashboard  > section:nth-child(5) > .body > .item,
+    .Page-info .Page-info-body .Dashboard  > section:nth-child(5) > .body > .item > section {
+        flex-direction: column;
+    }
+    .Page-info .Page-info-body .Dashboard  > section:nth-child(5) > .body > .item > section > span {
+        margin-top: 10px;
+    }
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(5) > .body > .item > img{
+    width: 100px;
+    height: 55px;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(6) > .body > section > i {
+    transition: 0.3s;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(6) > .body > section > i:hover {
+    color: var(--redcolor);
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(7) > table thead {
+    letter-spacing: 1.2px;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(8) > .body > .item > img{
+    width: 40px;
+    height: 40px;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(9)  > img {
+    width: 160px;
+    right: 0;
+    bottom: 0;
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Dashboard  > section:nth-child(9)  > img {
+        display: none;
+    }
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(9) > .body > section > span:empty {
+    width: 24px;
+    height: 24px;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(9) > .body > section:not(:last-of-type) > span:empty::after {
+    content: " ";
+    position: absolute;
+    height: 23px;
+    width: 2px;
+    background-color: var(--btncolor);
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(9) > .body > section:nth-child(4) > span:empty {
+    animation-name: ChangeColor;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes ChangeColor {
+    0 % {
+        background-color: var(--btncolor);
+    }
+    100% {
+        background-color: white;
+    }
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(10) > .body > section > span:empty:first-of-type {
+    width: 15px;
+    height: 15px;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(10) > .body > section > section:first-of-type{
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(11) >.body > p:first-of-type {
+    line-height: 1.8;
+    min-height: 140px;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(11) >.body > section:first-of-type > img:first-of-type {
+    width: 50px;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(12) > .body > section > section:first-of-type {
+    width: 52px;
+    transition: 0.3s;
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(12) > .body > section > section:first-of-type:hover {
+    transform: rotate(5deg);
+}
+.Page-info .Page-info-body .Dashboard  > section:nth-child(12) > .body > section > section:nth-of-type(2) {
+    width: calc(100% - 52px);
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body > section:last-of-type {
+        margin-top: 10px !important;
+    }
+}
+.Page-info .Page-info-body > section:last-of-type > .responsive-table {
+    overflow-x: auto;
+}
+.Page-info .Page-info-body > section:last-of-type > .responsive-table > table {
+    border-spacing: 0;
+    min-width: 1000px;
+}
+.Page-info .Page-info-body > section:last-of-type > .responsive-table > table > tbody > tr {
+    transition: 0.3s;
+}
+.Page-info .Page-info-body > section:last-of-type > .responsive-table > table > tbody > tr:hover {
+    background-color: #faf7f7;
+}
+.Page-info .Page-info-body > section:last-of-type > .responsive-table > table > tbody > tr > td > span:only-child > img{
+    width: 32px;
+    height: 32px;
+}
+/*******End of Page info Body -Dashboard Page- Styles*******/
+
+/*******End of Page info Body Styles*******/
