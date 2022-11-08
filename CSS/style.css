@@ -239,11 +239,11 @@ aside > ul li a:hover, aside > ul li .active{
 }
 /*******End of Page info Body Heading Styles*******/
 /*******Start of Page info Body -Dashboard Page- Styles*******/
-.Page-info .Page-info-body section:nth-of-type(2) {
+.Page-info .Page-info-body > section:nth-of-type(2) {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 @media (max-width: 767px) {
-    .Page-info .Page-info-body section:nth-of-type(2) {
+    .Page-info .Page-info-body > section:nth-of-type(2) {
         display: flex !important;
         flex-direction: column;
         gap: 10px;
