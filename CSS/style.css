@@ -97,7 +97,7 @@ aside {
 }
 @media (max-width: 767px) {
     aside {
-        width: 60px;
+        width: 58px;
         padding: 10px !important;
     }
 }
@@ -169,7 +169,7 @@ aside > ul li a:hover, aside > ul li .active{
 }
 @media (max-width: 767px) {
     .Page-info {
-        width: calc(100% - 60px);
+        width: calc(100% - 58px);
     }
 }
 @media (min-width: 767px) and (max-width: 992px) {
@@ -520,13 +520,13 @@ aside > ul li a:hover, aside > ul li .active{
     align-items: center;
     transition: 0.3s;
 }
-.Page-info .Page-info-body .Settings  > section:nth-child(4) > div > input {
-    height: 40px;
-    width: calc(100% - 40px);
-}
 .Page-info .Page-info-body .Settings  > section:nth-child(4) > div > i {
     width: 40px;
     height: 40px;
+}
+.Page-info .Page-info-body .Settings  > section:nth-child(4) > div > input {
+    height: 40px;
+    width: calc(100% - 40px);
 }
 .Page-info .Page-info-body .Settings  > section:nth-child(5) > label > input[type="checkbox"] {
     -webkit-appearance: none;
