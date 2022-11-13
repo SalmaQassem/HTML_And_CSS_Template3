@@ -74,6 +74,7 @@ html, body {
     --mainfontcolor: black;
     --lgreycolor: #eeeeee;
     --lgrey: #bababa;
+    --ligrey: #f9f9f9;
     --greycolor: #888888;
     --dgraycolor: #c9c9c9;
     --darkgrey: #aaaaaa;
@@ -486,8 +487,9 @@ aside > ul li a:hover, aside > ul li .active{
 
 /*******Start of Page info Body -Settings Page- Styles*******/
 .toggle-switch > .checkbox{
-    -webkit-appearance: none;
-    appearance: none;
+   /*-webkit-appearance: none;
+    appearance: none;*/
+    display: none;
 }
 .toggle-switch > .checkbox:checked + .toggle {
     background-color: var(--btncolor);
@@ -495,7 +497,7 @@ aside > ul li a:hover, aside > ul li .active{
 .toggle-switch > .checkbox:checked + .toggle::before {
     content: "\f00c";
     color: var(--btncolor);
-    transform: translate(44px, -50%);
+    transform: translate(calc(78px - 10px - 100%) , -50%);
 }
 .toggle-switch > .toggle {
     width: 78px;
@@ -629,4 +631,124 @@ aside > ul li a:hover, aside > ul li .active{
     transform: translateX(-50%);
 }
 /*******End of Page info Body -Settings Page- Styles*******/
+
+/*******Start of Page info Body -Profile Page- Styles*******/
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Profile > section:first-child {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.Page-info .Page-info-body .Profile > section:first-child > section:first-of-type {
+    width: 250px;
+}
+@media (max-width: 767px) {
+    /*.Page-info .Page-info-body .Profile > section:first-child > section:first-of-type {
+        width: 100%;
+    }*/
+    .Page-info .Page-info-body .Profile > section:first-child > section:first-of-type > div {
+        /*width: fit-content;*/
+
+        border: none;
+    }
+}
+.Page-info .Page-info-body .Profile > section:first-child > section:first-of-type > div > img {
+    width: 120px;
+    height: 120px;
+}
+.Page-info .Page-info-body .Profile > section:first-child > section:first-of-type > div > div:empty {
+    width: 70%;
+    height: 6px;
+}
+.Page-info .Page-info-body .Profile > section:first-child > section:first-of-type > div > div:empty::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 6px;
+    border-radius: 6px;
+    background-color: var(--btncolor);
+}
+.Page-info .Page-info-body .Profile > section:first-child > section:nth-of-type(2) {
+    width: calc(100% - 250px);
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Profile > section:first-child > section:nth-of-type(2) {
+        width: 100%;
+    }
+}
+.Page-info .Page-info-body .Profile > section:first-child > section:nth-of-type(2) > section {
+    transition: 0.3s;
+}
+.Page-info .Page-info-body .Profile > section:first-child > section:nth-of-type(2) > section:hover {
+    background-color: var(--ligrey);
+}
+.Page-info .Page-info-body .Profile > section:first-child > section:nth-of-type(2) > section > section:only-of-type > section {
+    min-width: 250px;
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Profile > section:first-child > section:nth-of-type(2) > section,
+    .Page-info .Page-info-body .Profile > section:first-child > section:nth-of-type(2) > section > section:only-of-type,
+    .Page-info .Page-info-body .Profile > section:first-child > section:nth-of-type(2) > section > section:only-of-type > section:not(:last-child),
+    .Page-info .Page-info-body .Profile > section:first-child > section:nth-of-type(2) > section > section:only-of-type > section > .toggle-switch {
+        justify-content: center;
+        align-items: center;
+    }
+}
+.Page-info .Page-info-body .Profile > section:first-child > section:nth-of-type(2) > section > section:only-of-type > section > .toggle-switch > .toggle {
+    height: 20px;
+}
+.Page-info .Page-info-body .Profile > section:first-child > section:nth-of-type(2) > section > section:only-of-type > section > .toggle-switch > .toggle::before {
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Profile > section:nth-child(2) {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.Page-info .Page-info-body .Profile > section:nth-child(2) > section:first-of-type {
+    width: 32%;
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Profile > section:nth-child(2) > section:first-of-type {
+        width: 100%;
+    }
+    .Page-info .Page-info-body .Profile > section:nth-child(2) > section:first-of-type > section {
+        justify-content: center;
+    }
+}
+.Page-info .Page-info-body .Profile > section:nth-child(2) > section:nth-of-type(2) {
+    width: calc(100% - 32%);
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Profile > section:nth-child(2) > section:nth-of-type(2) {
+        width: 100%;
+    }
+    .Page-info .Page-info-body .Profile > section:nth-child(2) > section:nth-of-type(2) > section {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+.Page-info .Page-info-body .Profile > section:nth-child(2) > section:nth-of-type(2) > section > img {
+    width: 64px;
+    height: 64px;
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Profile > section:nth-child(2) > section:nth-of-type(2) > section > section:only-of-type {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .Page-info .Page-info-body .Profile > section:nth-child(2) > section:nth-of-type(2) > section > section:only-of-type > section {
+       text-align: center;
+    }
+    .Page-info .Page-info-body .Profile > section:nth-child(2) > section:nth-of-type(2) > section > section:only-of-type > section > p[class*="time"] {
+        text-align: center;
+    }
+}
+/*******End of Page info Body -Profile Page- Styles*******/
 /*******End of Page info Body Styles*******/

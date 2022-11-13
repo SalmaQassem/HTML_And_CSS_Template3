@@ -204,14 +204,20 @@
 .p-l-30 {
     padding-left: 30px;
 }
+.p-t-b-10 {
+    padding: 10px 0;
+}
+.p-t-b-15 {
+    padding: 15px 0;
+}
+.p-t-b-20 {
+    padding: 20px 0;
+}
 .p-t4-b10 {
     padding: 4px 10px;
 }
 .p-t25-l15 {
     padding: 25px 15px;
-}
-.p-t-b-20 {
-    padding: 20px 0;
 }
 /***End of Padding Styles***/
 
@@ -243,6 +249,9 @@
 .m-r-10 {
     margin-right: 10px;
 }
+.m-r-5 {
+    margin-right: 5px;
+}
 .m-r-15 {
     margin-right: 15px;
 }
@@ -260,6 +269,9 @@
 }
 .m-b-15 {
     margin-bottom: 15px;
+}
+.m-b-16 {
+    margin-bottom: 16px;
 }
 .m-b-20 {
     margin-bottom: 20px;
@@ -332,6 +344,9 @@
 }
 .f-just-c-r {
     justify-content: right;
+}
+.f-just-c-l {
+    justify-content: left;
 }
 .f-align-c {
     align-items: center;
