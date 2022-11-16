@@ -192,6 +192,9 @@
 .p-b-30 {
     padding-bottom: 30px;
 }
+.p-top-15 {
+    padding: 15px 0 0;
+}
 .p-top-20 {
     padding: 20px 0 0;
 }
@@ -299,6 +302,12 @@
 }
 .m-t-20 {
     margin-top: 20px;
+}
+.m-t-30 {
+    margin-top: 30px;
+}
+.m-t-40 {
+    margin-top: 40px;
 }
 .m-t-50 {
     margin-top: 50px;

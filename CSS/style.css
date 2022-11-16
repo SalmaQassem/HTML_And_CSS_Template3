@@ -643,12 +643,7 @@ aside > ul li a:hover, aside > ul li .active{
     width: 250px;
 }
 @media (max-width: 767px) {
-    /*.Page-info .Page-info-body .Profile > section:first-child > section:first-of-type {
-        width: 100%;
-    }*/
     .Page-info .Page-info-body .Profile > section:first-child > section:first-of-type > div {
-        /*width: fit-content;*/
-
         border: none;
     }
 }
@@ -751,4 +746,55 @@ aside > ul li a:hover, aside > ul li .active{
     }
 }
 /*******End of Page info Body -Profile Page- Styles*******/
+
+/*******Start of Page info Body -Projects Page- Styles*******/
+.Page-info .Page-info-body .Projects > section > span {
+    right: 10px;
+    top: 10px;
+}
+.Page-info .Page-info-body .Projects > section > section:first-of-type > img {
+    width: 40px;
+    height: 40px;
+}
+.Page-info .Page-info-body .Projects > section > section:nth-of-type(2) > span {
+    width: fit-content;
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Projects > section > section:nth-of-type(2){
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 5px;
+    }
+}
+.Page-info .Page-info-body .Projects > section > section:last-of-type > div{
+    width: 260px;
+    height: 8px;
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .Projects > section > section:last-of-type {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+.Page-info .Page-info-body .Projects > section > section:last-of-type > div > span {
+    height: 8px;
+}
+/*.Page-info .Page-info-body .Projects > section > section:last-of-type > div:empty::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+}
+.Page-info .Page-info-body .Projects > section:first-of-type > section:last-of-type > div:empty::before {
+    width: 50%;
+    background-color: var(--redcolor);
+}
+.Page-info .Page-info-body .Projects > section:nth-of-type(2) > section:last-of-type > div:empty::before {
+    width: 80%;
+    background-color: var(--greencolor);
+}*/
+/*******End of Page info Body -Projects Page- Styles*******/
 /*******End of Page info Body Styles*******/
