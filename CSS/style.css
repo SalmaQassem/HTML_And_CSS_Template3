@@ -748,16 +748,13 @@ aside > ul li a:hover, aside > ul li .active{
 /*******End of Page info Body -Profile Page- Styles*******/
 
 /*******Start of Page info Body -Projects Page- Styles*******/
-.Page-info .Page-info-body .Projects > section > span {
+.Page-info .Page-info-body .Projects > section > span:first-child {
     right: 10px;
     top: 10px;
 }
 .Page-info .Page-info-body .Projects > section > section:first-of-type > img {
     width: 40px;
     height: 40px;
-}
-.Page-info .Page-info-body .Projects > section > section:nth-of-type(2) > span {
-    width: fit-content;
 }
 @media (max-width: 767px) {
     .Page-info .Page-info-body .Projects > section > section:nth-of-type(2){
@@ -766,9 +763,8 @@ aside > ul li a:hover, aside > ul li .active{
         padding-left: 5px;
     }
 }
-.Page-info .Page-info-body .Projects > section > section:last-of-type > div{
-    width: 260px;
-    height: 8px;
+.Page-info .Page-info-body .Projects > section > section:nth-of-type(2) > span {
+    width: fit-content;
 }
 @media (max-width: 767px) {
     .Page-info .Page-info-body .Projects > section > section:last-of-type {
@@ -777,24 +773,12 @@ aside > ul li a:hover, aside > ul li .active{
         align-items: center;
     }
 }
-.Page-info .Page-info-body .Projects > section > section:last-of-type > div > span {
+.Page-info .Page-info-body .Projects > section > section:last-of-type > div{
+    width: 260px;
     height: 8px;
 }
-/*.Page-info .Page-info-body .Projects > section > section:last-of-type > div:empty::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    border-radius: 6px;
-    top: 0;
-    left: 0;
+.Page-info .Page-info-body .Projects > section > section:last-of-type > div > span:empty {
+    height: 8px;
 }
-.Page-info .Page-info-body .Projects > section:first-of-type > section:last-of-type > div:empty::before {
-    width: 50%;
-    background-color: var(--redcolor);
-}
-.Page-info .Page-info-body .Projects > section:nth-of-type(2) > section:last-of-type > div:empty::before {
-    width: 80%;
-    background-color: var(--greencolor);
-}*/
 /*******End of Page info Body -Projects Page- Styles*******/
 /*******End of Page info Body Styles*******/
