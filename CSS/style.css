@@ -781,4 +781,36 @@ aside > ul li a:hover, aside > ul li .active{
     height: 8px;
 }
 /*******End of Page info Body -Projects Page- Styles*******/
+
+/*******Start of Page info Body -Courses Page- Styles*******/
+.Page-info .Page-info-body .Courses {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+}
+.Page-info .Page-info-body .Courses > section > section:first-of-type {
+    height: 235px;
+}
+.Page-info .Page-info-body .Courses > section > section:first-of-type > img:nth-of-type(2) {
+    width: 64px;
+    height: 64px;
+    left: 20px;
+    top: 20px;
+}
+.Page-info .Page-info-body .Courses > section > div:first-of-type::before {
+    content: "Course Info";
+    position: absolute;
+    font-family: Main_Font4, sans-serif;
+    font-size: 13px;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background-color: var(--btncolor);
+    bottom: -11.5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Page-info .Page-info-body .Courses > section > div:first-of-type > p {
+    line-height: 1.6;
+}
+/*******End of Page info Body -Courses Page- Styles*******/
+
 /*******End of Page info Body Styles*******/

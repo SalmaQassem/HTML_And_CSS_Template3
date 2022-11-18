@@ -312,6 +312,9 @@
 .m-t-50 {
     margin-top: 50px;
 }
+.m-t-b-15 {
+    margin: 15px 0;
+}
 .m-t-b-16 {
     margin: 16px 0;
 }
@@ -504,7 +507,7 @@
     list-style: none;
 }
 .t-dec-n {
- text-decoration: none;
+    text-decoration: none;
 }
 .t-dec-l {
     text-decoration: line-through;
