@@ -1,10 +1,476 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <meta name="description" content=" This Is Description For Template Three">
+    <!--Framework Css File-->
+    <link rel="stylesheet" href="CSS/framework.css"/>
+    <!--Main Css File-->
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <!--Normalize Css File-->
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <!--Icons Library-->
+    <link rel="stylesheet" href="CSS/all.min.css"/>
 </head>
-<body>
-
+<body class="flex">
+<aside class="p-20 pos-r b-white">
+    <h3 class="m-b-50 pos-r m-font">Salma</h3>
+    <ul class="m-t-b-16 m-font l-s-n">
+        <li class="font-14">
+            <a href="index.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-solid fa-chart-bar"></i>
+                <p class="m-l-10">Dashboard</p>
+            </a>
+        </li>
+        <li class="font-14">
+            <a href="settings.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-solid fa-gear"></i>
+                <p class="m-l-10">Settings</p>
+            </a>
+        </li>
+        <li class="font-14">
+            <a href="profile.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-regular fa-user"></i>
+                <p class="m-l-10">Profile</p>
+            </a>
+        </li>
+        <li>
+            <a href="projects.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-solid fa-diagram-project"></i>
+                <p class="m-l-10">Projects</p>
+            </a>
+        </li>
+        <li>
+            <a href="courses.html" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <p class="m-l-10">Courses</p>
+            </a>
+        </li>
+        <li>
+            <a href="friends.html" class="p-10 m-b-5 b-rad-6 flex f-align-c active t-dec-n a-i-c">
+                <i class="fa-regular fa-circle-user"></i>
+                <p class="m-l-10">Friends</p>
+            </a>
+        </li>
+        <li>
+            <a href="files" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-regular fa-file"></i>
+                <p class="m-l-10">Files</p>
+            </a>
+        </li>
+        <li>
+            <a href="plans" class="p-10 m-b-5 b-rad-6 flex f-align-c t-dec-n a-i-c">
+                <i class="fa-regular fa-credit-card"></i>
+                <p class="m-l-10">Plans</p>
+            </a>
+        </li>
+    </ul>
+</aside>
+<section class="Page-info">
+    <section class="Page-info-head p-15 flex f-just-c-s">
+        <section class="search pos-r">
+            <input type="search" placeholder="Type A Keyword" class="p-10 p-l-30 m-l-5 b-rad-10 font-13 r-font b-1px-grey">
+        </section>
+        <section class="profile flex f-align-c">
+            <section class="icon pos-r">
+                <i class="fa-regular fa-bell font-20"></i>
+            </section>
+            <img src="images/avatar.png" class="img-w-h m-l-15">
+        </section>
+    </section>
+    <section class="Page-info-body p-20">
+        <section class="heading pos-r">
+            <h1 class="m-b-40 m-t-0 m-font">Friends</h1>
+        </section>
+        <section class="friends dis-g g-gap-20">
+            <section class="p-20 b-rad-10 b-white pos-r">
+                <section class="flex f-gap-5 pos-a">
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </section>
+                <section class="wid-100 flex flex-c f-align-c b-b-1px-lgrey">
+                    <img src="images/friend-01.jpg" class="b-rad-50per m-t-10 m-b-10">
+                    <h4 class="m-font">Ahmed Nasser</h4>
+                    <p class="m-font font-13 f-grey m-t-5 m-b-13">JavaScript Developer</p>
+                </section>
+                <section class="p-t-b-15 flex f-just-c-s f-align-c b-b-1px-lgrey">
+                    <section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-regular fa-face-smile"></i>
+                            <p class="m-font">99 Friend</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <p class="m-font">15 Projects</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <p class="m-font">25 Articles</p>
+                        </section>
+                    </section>
+                    <p class="b-font font-40 f-orange opa-20">VIP</p>
+                </section>
+                <section class="p-top-15 flex f-just-c-s f-align-c">
+                    <p class="m-font font-13 f-grey">Joined 02/10/2021</p>
+                    <section class="flex f-gap-5 f-align-c">
+                        <a href="profile.html" class="b-rad-6 r-font font-13 btn-style btn-color t-dec-n">Profile</a>
+                        <a href="friends.html" class="b-rad-6 r-font font-13 btn-style b-red t-dec-n">Remove</a>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white pos-r">
+                <section class="flex f-gap-5 pos-a">
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </section>
+                <section class="wid-100 flex flex-c f-align-c b-b-1px-lgrey">
+                    <img src="images/friend-02.jpg" class="b-rad-50per m-t-10 m-b-10">
+                    <h4 class="m-font">Omar Fathy</h4>
+                    <p class="m-font font-13 f-grey m-t-5 m-b-13">Cloud Developer</p>
+                </section>
+                <section class="p-t-b-15 flex f-just-c-s f-align-c b-b-1px-lgrey">
+                    <section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-regular fa-face-smile"></i>
+                            <p class="m-font">30 Friends</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <p class="m-font">11 Projects</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <p class="m-font">12 Articles</p>
+                        </section>
+                    </section>
+                </section>
+                <section class="p-top-15 flex f-just-c-s f-align-c">
+                    <p class="m-font font-13 f-grey">Joined 02/08/2020</p>
+                    <section class="flex f-gap-5 f-align-c">
+                        <a href="profile.html" class="b-rad-6 r-font font-13 btn-style btn-color t-dec-n">Profile</a>
+                        <a href="friends.html" class="b-rad-6 r-font font-13 btn-style b-red t-dec-n">Remove</a>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white pos-r">
+                <section class="flex f-gap-5 pos-a">
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </section>
+                <section class="wid-100 flex flex-c f-align-c b-b-1px-lgrey">
+                    <img src="images/friend-03.jpg" class="b-rad-50per m-t-10 m-b-10">
+                    <h4 class="m-font">Omar Ahmed</h4>
+                    <p class="m-font font-13 f-grey m-t-5 m-b-13">Mobile Developer</p>
+                </section>
+                <section class="p-t-b-15 flex f-just-c-s f-align-c b-b-1px-lgrey">
+                    <section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-regular fa-face-smile"></i>
+                            <p class="m-font">80 Friends</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <p class="m-font">20 Projects</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <p class="m-font">18 Articles</p>
+                        </section>
+                    </section>
+                </section>
+                <section class="p-top-15 flex f-just-c-s f-align-c">
+                    <p class="m-font font-13 f-grey">Joined 02/06/2020</p>
+                    <section class="flex f-gap-5 f-align-c">
+                        <a href="profile.html" class="b-rad-6 r-font font-13 btn-style btn-color t-dec-n">Profile</a>
+                        <a href="friends.html" class="b-rad-6 r-font font-13 btn-style b-red t-dec-n">Remove</a>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white pos-r">
+                <section class="flex f-gap-5 pos-a">
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </section>
+                <section class="wid-100 flex flex-c f-align-c b-b-1px-lgrey">
+                    <img src="images/friend-04.jpg" class="b-rad-50per m-t-10 m-b-10">
+                    <h4 class="m-font">Shady Nabil</h4>
+                    <p class="m-font font-13 f-grey m-t-5 m-b-13">Back-End Developer</p>
+                </section>
+                <section class="p-t-b-15 flex f-just-c-s f-align-c b-b-1px-lgrey">
+                    <section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-regular fa-face-smile"></i>
+                            <p class="m-font">70 Friends</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <p class="m-font">30 Projects</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <p class="m-font">18 Articles</p>
+                        </section>
+                    </section>
+                </section>
+                <section class="p-top-15 flex f-just-c-s f-align-c">
+                    <p class="m-font font-13 f-grey">Joined 28/06/2020</p>
+                    <section class="flex f-gap-5 f-align-c">
+                        <a href="profile.html" class="b-rad-6 r-font font-13 btn-style btn-color t-dec-n">Profile</a>
+                        <a href="friends.html" class="b-rad-6 r-font font-13 btn-style b-red t-dec-n">Remove</a>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white pos-r">
+                <section class="flex f-gap-5 pos-a">
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </section>
+                <section class="wid-100 flex flex-c f-align-c b-b-1px-lgrey">
+                    <img src="images/friend-05.jpg" class="b-rad-50per m-t-10 m-b-10">
+                    <h4 class="m-font">Mohamed Ibrahim</h4>
+                    <p class="m-font font-13 f-grey m-t-5 m-b-13">Algorithm Developer</p>
+                </section>
+                <section class="p-t-b-15 flex f-just-c-s f-align-c b-b-1px-lgrey">
+                    <section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-regular fa-face-smile"></i>
+                            <p class="m-font">80 Friends</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <p class="m-font">30 Projects</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <p class="m-font">18 Articles</p>
+                        </section>
+                    </section>
+                </section>
+                <section class="p-top-15 flex f-just-c-s f-align-c">
+                    <p class="m-font font-13 f-grey">Joined 28/08/2020</p>
+                    <section class="flex f-gap-5 f-align-c">
+                        <a href="profile.html" class="b-rad-6 r-font font-13 btn-style btn-color t-dec-n">Profile</a>
+                        <a href="friends.html" class="b-rad-6 r-font font-13 btn-style b-red t-dec-n">Remove</a>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white pos-r">
+                <section class="flex f-gap-5 pos-a">
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </section>
+                <section class="wid-100 flex flex-c f-align-c b-b-1px-lgrey">
+                    <img src="images/friend-04.jpg" class="b-rad-50per m-t-10 m-b-10">
+                    <h4 class="m-font">Amr Hendawy</h4>
+                    <p class="m-font font-13 f-grey m-t-5 m-b-13">Back-End Developer</p>
+                </section>
+                <section class="p-t-b-15 flex f-just-c-s f-align-c b-b-1px-lgrey">
+                    <section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-regular fa-face-smile"></i>
+                            <p class="m-font">70 Friends</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <p class="m-font">30 Projects</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <p class="m-font">18 Articles</p>
+                        </section>
+                    </section>
+                </section>
+                <section class="p-top-15 flex f-just-c-s f-align-c">
+                    <p class="m-font font-13 f-grey">Joined 28/06/2020</p>
+                    <section class="flex f-gap-5 f-align-c">
+                        <a href="profile.html" class="b-rad-6 r-font font-13 btn-style btn-color t-dec-n">Profile</a>
+                        <a href="friends.html" class="b-rad-6 r-font font-13 btn-style b-red t-dec-n">Remove</a>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white pos-r">
+                <section class="flex f-gap-5 pos-a">
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </section>
+                <section class="wid-100 flex flex-c f-align-c b-b-1px-lgrey">
+                    <img src="images/friend-02.jpg" class="b-rad-50per m-t-10 m-b-10">
+                    <h4 class="m-font">Mahmoud Adel</h4>
+                    <p class="m-font font-13 f-grey m-t-5 m-b-13">Cloud Developer</p>
+                </section>
+                <section class="p-t-b-15 flex f-just-c-s f-align-c b-b-1px-lgrey">
+                    <section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-regular fa-face-smile"></i>
+                            <p class="m-font">30 Friends</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <p class="m-font">11 Projects</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <p class="m-font">12 Articles</p>
+                        </section>
+                    </section>
+                </section>
+                <section class="p-top-15 flex f-just-c-s f-align-c">
+                    <p class="m-font font-13 f-grey">Joined 02/08/2020</p>
+                    <section class="flex f-gap-5 f-align-c">
+                        <a href="profile.html" class="b-rad-6 r-font font-13 btn-style btn-color t-dec-n">Profile</a>
+                        <a href="friends.html" class="b-rad-6 r-font font-13 btn-style b-red t-dec-n">Remove</a>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white pos-r">
+                <section class="flex f-gap-5 pos-a">
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </section>
+                <section class="wid-100 flex flex-c f-align-c b-b-1px-lgrey">
+                    <img src="images/friend-05.jpg" class="b-rad-50per m-t-10 m-b-10">
+                    <h4 class="m-font">Ahmed Abuzaid</h4>
+                    <p class="m-font font-13 f-grey m-t-5 m-b-13">Content Creator</p>
+                </section>
+                <section class="p-t-b-15 flex f-just-c-s f-align-c b-b-1px-lgrey">
+                    <section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-regular fa-face-smile"></i>
+                            <p class="m-font">80 Friends</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <p class="m-font">30 Projects</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <p class="m-font">18 Articles</p>
+                        </section>
+                    </section>
+                    <p class="b-font font-40 f-orange opa-20">VIP</p>
+                </section>
+                <section class="p-top-15 flex f-just-c-s f-align-c">
+                    <p class="m-font font-13 f-grey">Joined 28/08/2020</p>
+                    <section class="flex f-gap-5 f-align-c">
+                        <a href="profile.html" class="b-rad-6 r-font font-13 btn-style btn-color t-dec-n">Profile</a>
+                        <a href="friends.html" class="b-rad-6 r-font font-13 btn-style b-red t-dec-n">Remove</a>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white pos-r">
+                <section class="flex f-gap-5 pos-a">
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </section>
+                <section class="wid-100 flex flex-c f-align-c b-b-1px-lgrey">
+                    <img src="images/friend-01.jpg" class="b-rad-50per m-t-10 m-b-10">
+                    <h4 class="m-font">Gareeb Elshiekh</h4>
+                    <p class="m-font font-13 f-grey m-t-5 m-b-13">JavaScript Developer</p>
+                </section>
+                <section class="p-t-b-15 flex f-just-c-s f-align-c b-b-1px-lgrey">
+                    <section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-regular fa-face-smile"></i>
+                            <p class="m-font">90 Friends</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <p class="m-font">15 Projects</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <p class="m-font">25 Articles</p>
+                        </section>
+                    </section>
+                    <p class="b-font font-40 f-orange opa-20">VIP</p>
+                </section>
+                <section class="p-top-15 flex f-just-c-s f-align-c">
+                    <p class="m-font font-13 f-grey">Joined 02/10/2020</p>
+                    <section class="flex f-gap-5 f-align-c">
+                        <a href="profile.html" class="b-rad-6 r-font font-13 btn-style btn-color t-dec-n">Profile</a>
+                        <a href="friends.html" class="b-rad-6 r-font font-13 btn-style b-red t-dec-n">Remove</a>
+                    </section>
+                </section>
+            </section>
+            <section class="p-20 b-rad-10 b-white pos-r">
+                <section class="flex f-gap-5 pos-a">
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="friends.html" class="t-dec-n cur-p font-13 f-d-grey flex f-just-c-c f-align-c b-grey b-rad-50per">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </section>
+                <section class="wid-100 flex flex-c f-align-c b-b-1px-lgrey">
+                    <img src="images/friend-03.jpg" class="b-rad-50per m-t-10 m-b-10">
+                    <h4 class="m-font">Hamza</h4>
+                    <p class="m-font font-13 f-grey m-t-5 m-b-13">Front-End Developer</p>
+                </section>
+                <section class="p-t-b-15 flex f-just-c-s f-align-c b-b-1px-lgrey">
+                    <section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-regular fa-face-smile"></i>
+                            <p class="m-font">80 Friends</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14 m-b-10">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <p class="m-font">20 Projects</p>
+                        </section>
+                        <section class="flex f-gap-10 f-align-c font-14">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <p class="m-font">18 Articles</p>
+                        </section>
+                    </section>
+                </section>
+                <section class="p-top-15 flex f-just-c-s f-align-c">
+                    <p class="m-font font-13 f-grey">Joined 02/06/2020</p>
+                    <section class="flex f-gap-5 f-align-c">
+                        <a href="profile.html" class="b-rad-6 r-font font-13 btn-style btn-color t-dec-n">Profile</a>
+                        <a href="friends.html" class="b-rad-6 r-font font-13 btn-style b-red t-dec-n">Remove</a>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+</section>
 </body>
 </html>

@@ -813,4 +813,32 @@ aside > ul li a:hover, aside > ul li .active{
 }
 /*******End of Page info Body -Courses Page- Styles*******/
 
+/*******Start of Page info Body -Friends Page- Styles*******/
+.Page-info .Page-info-body .friends {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+}
+.Page-info .Page-info-body .friends > section > section:first-of-type {
+    left: 10px;
+    top: 10px;
+}
+.Page-info .Page-info-body .friends > section > section:first-of-type > a {
+    width: 33px;
+    height: 33px;
+    transition: 0.3s;
+}
+.Page-info .Page-info-body .friends > section > section:first-of-type > a:hover {
+    background-color: var(--btncolor);
+}
+.Page-info .Page-info-body .friends > section > section:first-of-type > a:hover > i {
+    color: white;
+}
+.Page-info .Page-info-body .friends > section > section:nth-of-type(2) > img {
+    width: 100px;
+    height: 100px;
+}
+.Page-info .Page-info-body .friends > section > section:nth-of-type(3) > section > section > i {
+    width: 1.25em;
+}
+/*******End of Page info Body -Friends Page- Styles*******/
+
 /*******End of Page info Body Styles*******/

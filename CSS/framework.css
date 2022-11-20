@@ -79,6 +79,9 @@
 .f-grey {
     color: #888888;
 }
+.f-d-grey {
+    color: #666666;
+}
 .f-lgrey {
     color: #bababa;
 }
@@ -111,6 +114,9 @@
 /***Start of Opacity Styles***/
 .opa-10 {
     opacity: 0.1;
+}
+.opa-20 {
+    opacity: 0.2;
 }
 .opa-30 {
     opacity: 0.3;
@@ -145,6 +151,9 @@
 }
 .font-32 {
     font-size: 32px;
+}
+.font-40 {
+    font-size: 40px;
 }
 /*Font Family*/
 .l-font {
@@ -269,6 +278,9 @@
 }
 .m-b-10 {
     margin-bottom: 10px;
+}
+.m-b-13 {
+    margin-bottom: 13px;
 }
 .m-b-15 {
     margin-bottom: 15px;
