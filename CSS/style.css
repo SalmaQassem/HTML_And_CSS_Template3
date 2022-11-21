@@ -895,4 +895,17 @@ aside > ul li a:hover, aside > ul li .active{
     }
 }
 /*******End of Page info Body -Files Page- Styles*******/
+/*******Start of Page info Body -Plans Page- Styles*******/
+.Page-info .Page-info-body .plans > section > section:first-of-type > div::before {
+    content: "$";
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    top: 0;
+    left: -20px;
+}
+.Page-info .Page-info-body .plans > section > section:nth-of-type(2) > section > section:first-child > i {
+    width: 18px;
+}
+/*******End of Page info Body -Plans Page- Styles*******/
 /*******End of Page info Body Styles*******/
