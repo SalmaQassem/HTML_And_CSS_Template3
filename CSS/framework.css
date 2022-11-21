@@ -12,8 +12,11 @@
 .b-dark-b {
     background-color: #0077b5;
 }
-.b-dark-r {
-    background-color: #ff0000;
+.btn-color {
+    background-color: #0075fe;
+}
+.blu-color {
+    background-color: var(--bluebox);
 }
 .b-li-b {
     background-color: #d2ecfc;
@@ -24,14 +27,8 @@
 .b-li-blu {
     background-color: #cce4f0;
 }
-.b-l-r {
-    background-color: #ffcccc;
-}
 .b-grey {
     background-color: #eeeeee;
-}
-.b-li-gr {
-    background-color: #f6f6f6;
 }
 .b-lgray {
     background-color: #f0f4f8;
@@ -42,23 +39,26 @@
 .b-green {
     background-color: #22c55e;
 }
+.b-li-gr {
+    background-color: #f6f6f6;
+}
+.gr-color {
+    background-color: var(--lightgreen);
+}
 .b-orange {
     background-color: #f59e0b;
-}
-.b-red {
-    background-color: #f44336;
-}
-.btn-color {
-    background-color: #0075fe;
-}
-.blu-color {
-    background-color: var(--bluebox);
 }
 .or-color {
     background-color: var(--lightOrange);
 }
-.gr-color {
-    background-color: var(--lightgreen);
+.b-red {
+    background-color: #f44336;
+}
+.b-dark-r {
+    background-color: #ff0000;
+}
+.b-l-r {
+    background-color: #ffcccc;
 }
 .s-b-color {
     background-image: linear-gradient(to right, var(--btncolor) 80%, var(--bluebox) 80%);
@@ -201,6 +201,9 @@
 .p-b-30 {
     padding-bottom: 30px;
 }
+.p-top-10 {
+    padding: 10px 0 0;
+}
 .p-top-15 {
     padding: 15px 0 0;
 }
@@ -231,6 +234,10 @@
 .p-t25-l15 {
     padding: 25px 15px;
 }
+.p-l-r-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 /***End of Padding Styles***/
 
 /***Start of Margin Styles***/
@@ -239,6 +246,9 @@
 }
 .btn1-m {
     margin: 0 0 0 auto;
+}
+.btn2-m {
+    margin: 15px auto 0 auto;
 }
 .m-15 {
     margin: 15px;

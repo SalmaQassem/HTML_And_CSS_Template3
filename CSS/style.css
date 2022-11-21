@@ -841,4 +841,58 @@ aside > ul li a:hover, aside > ul li .active{
 }
 /*******End of Page info Body -Friends Page- Styles*******/
 
+/*******Start of Page info Body -Files Page- Styles*******/
+.Page-info .Page-info-body .files > section:first-child {
+    width: calc((100% - 260px) - 20px);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+}
+@media (max-width: 767px) {
+    .Page-info .Page-info-body .files > section:first-child {
+        width: 100%;
+        order: 2;
+        gap: 10px;
+    }
+}
+.Page-info .Page-info-body .files > section:first-child > section:hover > section:first-of-type > img {
+    transform: rotate(5deg);
+}
+.Page-info .Page-info-body .files > section:first-child > section > section:first-of-type > img {
+    width: 64px;
+    height: 64px;
+    transition: 0.3s;
+}
+.Page-info .Page-info-body .files > section:nth-child(2) {
+    min-width: 260px;
+    height: fit-content;
+}
+.Page-info .Page-info-body .files > section:nth-child(2) > section:only-of-type > section > section:first-of-type {
+    width: 40px;
+    height: 40px;
+}
+.Page-info .Page-info-body .files > section:nth-child(2) > section:only-of-type > section > section:nth-of-type(2) {
+    width: calc(100% - 50px);
+}
+.Page-info .Page-info-body .files > section:nth-child(2) > a {
+    width: fit-content;
+    transition: 0.3s;
+}
+.Page-info .Page-info-body .files > section:nth-child(2) > a:hover {
+    background-color: var(--btnhcolor);
+}
+.Page-info .Page-info-body .files > section:nth-child(2) > a:hover > i{
+    animation-name: up-down;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+.Page-info .Page-info-body .files > section:nth-child(2) > a > i {
+}
+@keyframes  up-down {
+    50% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/*******End of Page info Body -Files Page- Styles*******/
 /*******End of Page info Body Styles*******/
