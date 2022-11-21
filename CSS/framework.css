@@ -561,7 +561,7 @@
 }
 /*Button Style*/
 .btn-style {
-    /*width: fit-content;*/
+    width: fit-content;
     padding: 4px 10px;
     color: white;
     cursor: pointer;
